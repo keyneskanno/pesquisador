@@ -1,0 +1,22 @@
+uuid: a88bebbd-d2f7-47b0-8149-fa30c41d2be7
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ufu_radix
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: ufu_radix_help
+theme: ufu_radix
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ajuda
+  provider: help
+  label_display: '0'
+visibility: {  }

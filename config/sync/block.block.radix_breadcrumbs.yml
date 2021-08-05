@@ -1,0 +1,22 @@
+uuid: 99db63c3-02bc-42e4-87d2-4d61c96cfdd5
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: radix_breadcrumbs
+theme: radix
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Trilha de navegação'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,43 @@
+name: UFU Radix
+description: Tema desenvolvido para a Universidade Federal de Uberlândia baseado no tema Radix.
+screenshot: screenshot.png
+core_version_requirement: ^8.8 || ^9.0
+engine: twig
+type: theme
+base theme: radix
+
+regions:
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  featured: Featured
+  header: Header
+  aside: Left aside
+  content: Content
+  first_area: First area
+  second_area: Second area
+  third_area: Third area
+  fourth_area: Fourth area
+  fifth_area: Fifth area
+  bottom: Page bottom
+  footer: Footer
+
+libraries:
+  - radix/style
+  - ufu_radix/style
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/ufu_radix.style.css
+
+components:
+  namespaces:
+    ufu_radix: 
+      - ./src/components
+
+# Information added by Drupal.org packaging script on 2020-09-30
+version: '8.x-4.10'
+project: 'radix'
+datestamp: 1601449011

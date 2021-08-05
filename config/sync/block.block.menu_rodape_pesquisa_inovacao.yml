@@ -1,0 +1,35 @@
+uuid: b9717ce4-50fe-4861-9062-961288395a79
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - menu_block
+  theme:
+    - ufu_radix
+third_party_settings:
+  block_class:
+    classes: 'col-lg-2 col-md-2 col-sm-12'
+id: menu_rodape_pesquisa_inovacao
+theme: ufu_radix
+region: bottom
+weight: -5
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Pesquisa e Inovação'
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'main:menu_link_content:0eb0923d-1290-4a31-a3ae-19e371cc8e56'
+  suggestion: main
+  label_type: block
+  label_link: false
+visibility: {  }

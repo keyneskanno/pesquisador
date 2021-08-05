@@ -1,0 +1,5 @@
+# Schema for the configuration files of the ufu_radix theme.
+
+ufu_radix.settings:
+  type: theme_settings
+  label: 'ufu_radix settings'

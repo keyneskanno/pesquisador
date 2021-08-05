@@ -1,0 +1,163 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+  {% embed '@radix/navbar/navbar.twig' with {
+    placement: 'sticky-top',
+    container: 'fixed',
+    color: 'dark',
+    utility_classes: ['bg-primary'],
+  } %}
+
+    {% block branding %}
+      {% if page.navbar_branding %}
+        {{ page.navbar_branding }}
+      {% endif %}
+    {% endblock %}
+
+    {% block left %}
+      {% if page.navbar_left %}
+        <div class="mr-auto">
+          {{ page.navbar_left }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% block right %}
+      {% if page.navbar_right %}
+        {{ page.navbar_right }}
+      {% endif %}
+    {% endblock %}
+  {% endembed %}
+
+  <main class="pt-0">
+
+    {% if page.featured %}
+      <div class="page__featured">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            {{ page.featured }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.header %}
+      <div class="page__header container-fluid">
+        <div class="row no-gutters">
+          <div class="container">
+            <div class="row no-gutters">
+              {{ page.header }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="container">
+      <div class="row no-gutters">
+        {% if page.aside %}
+          <div class="page__aside col-lg-3 col-md-3 col-sm-12">
+            {{ page.aside }}
+          </div>
+        {% endif %}
+
+        {% if page.content %}
+          <div class="page__content col mb-5">
+            <div class="row no-gutters">
+              {{ page.content }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if page.first_area %}
+      <div class="first__area container-fluid bg-light">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            <div class="row no-gutters">
+              {{ page.first_area }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.second_area %}
+      <div class="second__area container-fluid">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            <div class="row no-gutters">
+              {{ page.second_area }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.third_area %}
+      <div class="third__area container-fluid bg-primary text-light">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            <div class="row no-gutters">
+              {{ page.third_area }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.fourth_area %}
+      <div class="fourth__area container-fluid">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            <div class="row no-gutters">
+              {{ page.fourth_area }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.fifth_area %}
+      <div class="fifth__area container-fluid bg-light">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            <div class="row no-gutters">
+              {{ page.fifth_area }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.bottom %}
+      <div class="page__bottom bg-primary text-light">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            <div class="row no-gutters">
+              {{ page.bottom }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer class="page__footer">
+      <div class="container-fluid ">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            {{ page.footer }}
+          </div>
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+</div>
