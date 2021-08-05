@@ -255,6 +255,14 @@ li.compartilhar a:hover {
   .paragraph--type--galeria .galeria__imagens {
     grid-template-columns: auto auto auto auto;
   }
+
+  .navbar-nav .dropdown-menu {
+    max-width: calc(100vw - 30px) !important;
+  }
+
+  a.dropdown-item {
+    white-space: normal;
+  }
 }
 @media screen and (max-width: 320px) {
   .carousel-item img {
