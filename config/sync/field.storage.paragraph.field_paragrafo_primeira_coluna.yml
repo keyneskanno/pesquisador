@@ -1,0 +1,19 @@
+uuid: a466f240-f620-4bc7-9c52-daada44d7711
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_paragrafo_primeira_coluna
+field_name: field_paragrafo_primeira_coluna
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

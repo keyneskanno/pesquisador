@@ -1,0 +1,15 @@
+uuid: 0fabe63e-af6e-44a3-8555-1e4a458271cd
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_hd_3_colunas
+label: "Full HD (3 colunas) (640 x 360)\t"
+effects:
+  8b1fc2ec-c377-4cc4-af9c-ecc9f55b8b05:
+    uuid: 8b1fc2ec-c377-4cc4-af9c-ecc9f55b8b05
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 360
+      anchor: center-center

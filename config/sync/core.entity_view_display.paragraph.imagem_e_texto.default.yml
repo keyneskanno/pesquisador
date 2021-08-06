@@ -1,0 +1,72 @@
+uuid: b819106c-e9c1-4bb8-9ae9-a9087a29e54f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagem_e_texto.field_paragrafo_imagem
+    - field.field.paragraph.imagem_e_texto.field_paragrafo_texto
+    - image.style.full_hd
+    - paragraphs.paragraphs_type.imagem_e_texto
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+              col-md-6: col-md-6
+              col-lg-6: col-lg-6
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+              col-md-6: col-md-6
+              col-lg-6: col-lg-6
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - field_paragrafo_imagem
+      right:
+        - field_paragrafo_texto
+id: paragraph.imagem_e_texto.default
+targetEntityType: paragraph
+bundle: imagem_e_texto
+mode: default
+content:
+  field_paragrafo_imagem:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: full_hd
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  field_paragrafo_texto:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+hidden: {  }

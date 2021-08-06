@@ -36,11 +36,9 @@
   <main class="pt-0">
 
     {% if page.featured %}
-      <div class="page__featured">
-        <div class="container-fluid">
-          <div class="row no-gutters">
-            {{ page.featured }}
-          </div>
+      <div class="page__featured container-fluid">
+        <div class="row">
+          {{ page.featured }}
         </div>
       </div>
     {% endif %}
@@ -49,9 +47,7 @@
       <div class="page__header container-fluid">
         <div class="row no-gutters">
           <div class="container">
-            <div class="row no-gutters">
-              {{ page.header }}
-            </div>
+            {{ page.header }}
           </div>
         </div>
       </div>
@@ -67,9 +63,7 @@
 
         {% if page.content %}
           <div class="page__content col mb-5">
-            <div class="row no-gutters">
-              {{ page.content }}
-            </div>
+            {{ page.content }}
           </div>
         {% endif %}
       </div>

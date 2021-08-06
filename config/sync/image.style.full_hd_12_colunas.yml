@@ -1,0 +1,15 @@
+uuid: 4bd52bc0-adcc-462c-ae1f-27f6ae998eee
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_hd_12_colunas
+label: 'Full HD (12 colunas) (160x90)'
+effects:
+  81d22ed3-cc5f-4bfa-a798-3acb47c80f28:
+    uuid: 81d22ed3-cc5f-4bfa-a798-3acb47c80f28
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 90
+      anchor: center-center

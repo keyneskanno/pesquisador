@@ -1,0 +1,10 @@
+uuid: a8896737-4379-4c84-8ef5-1fa0c51af442
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.lista_horizontal
+label: 'Lista horizontal'
+targetEntityType: node
+cache: true

@@ -1,0 +1,15 @@
+uuid: 6e4fcf22-ed33-40e2-9fa7-7c84a05c17e2
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_hd_2_colunas
+label: 'Full HD (2 colunas) (960 x 540)'
+effects:
+  15fc3034-c4b3-4d4c-87ce-d7d031c1185d:
+    uuid: 15fc3034-c4b3-4d4c-87ce-d7d031c1185d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 540
+      anchor: center-center

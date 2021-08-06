@@ -1,0 +1,17 @@
+uuid: c055b7d5-d2a1-46a3-aca6-0f2607a801ea
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Notícia
+type: noticia
+description: 'Crie uma nova <em>Notícia</em>.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

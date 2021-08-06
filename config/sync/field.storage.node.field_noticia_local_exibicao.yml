@@ -1,0 +1,30 @@
+uuid: 07f80520-9fb1-43cd-9ec1-2b50233f4f50
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_noticia_local_exibicao
+field_name: field_noticia_local_exibicao
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Destaque
+      label: Destaque
+    -
+      value: 'Destaque sazonal'
+      label: 'Destaque sazonal'
+    -
+      value: 'Linha do tempo'
+      label: 'Linha do tempo'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

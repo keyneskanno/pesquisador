@@ -1,0 +1,16 @@
+uuid: 4970ce83-6b2d-4661-8c1b-17da1692003a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - php
+name: Código
+format: codigo
+weight: 0
+filters:
+  php_code:
+    id: php_code
+    provider: php
+    status: true
+    weight: 0
+    settings: {  }

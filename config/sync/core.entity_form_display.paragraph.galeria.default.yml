@@ -1,0 +1,26 @@
+uuid: 8a4ca216-b05d-440f-9336-00da2c17bf96
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.galeria.field_paragrafo_imagens
+    - image.style.full_hd_12_colunas
+    - paragraphs.paragraphs_type.galeria
+  module:
+    - image
+id: paragraph.galeria.default
+targetEntityType: paragraph
+bundle: galeria
+mode: default
+content:
+  field_paragrafo_imagens:
+    weight: 0
+    settings:
+      preview_image_style: full_hd_12_colunas
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

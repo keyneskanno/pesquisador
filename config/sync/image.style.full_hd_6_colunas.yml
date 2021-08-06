@@ -1,0 +1,15 @@
+uuid: 33da2f72-8740-4db6-9798-da5dfef60e14
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_hd_6_colunas
+label: 'Full HD (6 colunas) (320 x 180)'
+effects:
+  a0e622c6-a550-4baa-931c-7e99fac97712:
+    uuid: a0e622c6-a550-4baa-931c-7e99fac97712
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 180
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 385bbacd-f6ae-45c1-a3f1-b98ccd72faaa
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: noticias
+label: Notícias
+type: 'canonical_entities:node'
+pattern: 'noticias/[node:created:custom:Y]/[node:created:custom:m]/[node:title]'
+selection_criteria:
+  0715e088-ab3b-4a01-af11-05f9588d3dd5:
+    id: node_type
+    bundles:
+      noticia: noticia
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 0715e088-ab3b-4a01-af11-05f9588d3dd5
+selection_logic: and
+weight: -5
+relationships: {  }

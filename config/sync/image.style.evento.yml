@@ -1,0 +1,15 @@
+uuid: 8888120f-cc51-44ba-b5c1-43e9b892e1c9
+langcode: pt-br
+status: true
+dependencies: {  }
+name: evento
+label: 'Evento (640 x 960)'
+effects:
+  8755efee-b834-426c-8512-b06dc4f1971c:
+    uuid: 8755efee-b834-426c-8512-b06dc4f1971c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 960
+      anchor: center-center

@@ -1,0 +1,10 @@
+new_id: 2
+_core:
+  default_config_hash: 1qKVk03zhLAZj-W36dakmXWDO3mx28TRgx9iDzHpqMs
+langcode: pt-br
+callback_1:
+  created: 1628258569
+  cid: 1
+  updated: 1628258569
+  path: inicio
+  page_title: Início

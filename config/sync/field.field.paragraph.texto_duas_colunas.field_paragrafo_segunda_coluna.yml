@@ -1,0 +1,21 @@
+uuid: 699877bd-8557-41f9-9724-9462253ea58e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragrafo_segunda_coluna
+    - paragraphs.paragraphs_type.texto_duas_colunas
+  module:
+    - text
+id: paragraph.texto_duas_colunas.field_paragrafo_segunda_coluna
+field_name: field_paragrafo_segunda_coluna
+entity_type: paragraph
+bundle: texto_duas_colunas
+label: 'Segunda coluna'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,11 +1,11 @@
 uuid: 6b9fa9e6-aa14-46b5-984c-a843b47cb66f
 name: 'Universidade Federal de Uberlândia'
-mail: websites@cti.ufu.br
-slogan: ''
+mail: webmaster@ufu.br
+slogan: 'Um bem público a serviço do Brasil.'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /inicio
 admin_compact_mode: false
 weight_select_max: 100
 langcode: pt-br

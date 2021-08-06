@@ -1,0 +1,10 @@
+uuid: 9b3d70ba-793f-4c41-9fb9-0e73f91867dd
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.lista_sem_imagem
+label: 'Lista sem imagem'
+targetEntityType: node
+cache: true

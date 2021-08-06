@@ -1,0 +1,15 @@
+uuid: 8cf0afe8-a5dd-45ae-8999-451255e0953b
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_hd_4_colunas
+label: 'Full HD (4 colunas) (480 x 270)'
+effects:
+  f549445f-a630-4f75-b125-03817d2e81c0:
+    uuid: f549445f-a630-4f75-b125-03817d2e81c0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 270
+      anchor: center-center

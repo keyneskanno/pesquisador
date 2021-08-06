@@ -1,0 +1,66 @@
+uuid: 08e86873-1c08-4b6d-a55e-fb560a1645e4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noticia_paragrafos
+    - node.type.noticia
+    - paragraphs.paragraphs_type.arquivos
+    - paragraphs.paragraphs_type.galeria
+    - paragraphs.paragraphs_type.imagem
+    - paragraphs.paragraphs_type.imagem_e_texto
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.texto_duas_colunas
+    - paragraphs.paragraphs_type.texto_e_imagem
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.noticia.field_noticia_paragrafos
+field_name: field_noticia_paragrafos
+entity_type: node
+bundle: noticia
+label: Parágrafos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      texto: texto
+      galeria: galeria
+      imagem: imagem
+      texto_duas_colunas: texto_duas_colunas
+      imagem_e_texto: imagem_e_texto
+      texto_e_imagem: texto_e_imagem
+      arquivos: arquivos
+      video: video
+    target_bundles_drag_drop:
+      arquivos:
+        enabled: true
+        weight: -11
+      galeria:
+        enabled: true
+        weight: -16
+      imagem:
+        enabled: true
+        weight: -15
+      imagem_e_texto:
+        enabled: true
+        weight: -13
+      texto:
+        enabled: true
+        weight: -17
+      texto_duas_colunas:
+        enabled: true
+        weight: -14
+      texto_e_imagem:
+        enabled: true
+        weight: -12
+      video:
+        enabled: true
+        weight: -10
+field_type: entity_reference_revisions

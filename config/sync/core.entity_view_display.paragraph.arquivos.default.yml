@@ -1,0 +1,26 @@
+uuid: aba9644f-b5cf-46f1-9227-2aa9807b1a9c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.arquivos.field_paragrafo_arquivos
+    - paragraphs.paragraphs_type.arquivos
+  module:
+    - ds
+    - file
+id: paragraph.arquivos.default
+targetEntityType: paragraph
+bundle: arquivos
+mode: default
+content:
+  field_paragrafo_arquivos:
+    weight: 0
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: file_table
+    region: content
+hidden: {  }

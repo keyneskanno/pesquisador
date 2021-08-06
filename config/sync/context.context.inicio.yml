@@ -1,0 +1,112 @@
+uuid: 15b82575-679c-4d31-9096-80ec6e316145
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.noticias
+  module:
+    - system
+    - views
+name: inicio
+label: Início
+group: null
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: ufu_radix
+    negate: 0
+    uuid: 0ac2ddc3-edae-4604-b7c4-8602e7cd1959
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    uuid: edc8d35d-b506-4b26-b9a7-12e2e61c4b4f
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      1dc3a059-80e4-4140-a442-5f19b1021edb:
+        id: 'views_block:noticias-bloco_noticias_destaque'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: featured
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_noticias_bloco_noticias_destaque
+        theme: ufu_radix
+        css_class: mb-5
+        unique: 1
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 1dc3a059-80e4-4140-a442-5f19b1021edb
+      edca85e3-6bc5-4c60-b37c-181e53f16446:
+        id: 'views_block:noticias-bloco_noticias_recentes'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_noticias_bloco_noticias_recentes
+        theme: ufu_radix
+        css_class: mb-5
+        unique: 0
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: edca85e3-6bc5-4c60-b37c-181e53f16446
+      41b1931b-863c-4439-bcb3-d9f85ed1542f:
+        id: 'views_block:noticias-bloco_noticia_sazonal'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: first_area
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_noticias_bloco_noticia_sazonal
+        theme: ufu_radix
+        css_class: ''
+        unique: 0
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 41b1931b-863c-4439-bcb3-d9f85ed1542f
+      46165889-7a5b-4699-ba08-5c60193f0dbf:
+        id: 'views_block:noticias-bloco_mais_noticias'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: second_area
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_noticias_bloco_mais_noticias
+        theme: ufu_radix
+        css_class: ''
+        unique: 0
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 46165889-7a5b-4699-ba08-5c60193f0dbf
+    id: blocks
+    saved: false
+    uuid: c10a35e9-0765-47ee-9b7e-458362f95063
+    include_default_blocks: 0
+weight: 0

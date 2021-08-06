@@ -1,0 +1,10 @@
+uuid: 9a69bd91-952c-427a-9bff-cf88fe5e4ae0
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.lista_com_imagem
+label: 'Lista com imagem'
+targetEntityType: node
+cache: true

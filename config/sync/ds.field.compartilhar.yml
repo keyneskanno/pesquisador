@@ -1,0 +1,11 @@
+id: compartilhar
+label: Compartilhar
+ui_limit: ''
+properties:
+  content:
+    value: "<div class=\"row\">\r\n    <div class=\"col-lg-6 col-md-6 col-sm-12\">\r\n        <p class=\"compartilhar\">Publicado em [node:created:custom:d/m/Y] às [node:created:custom:H:i] - Atualizado em [node:changed:custom:d/m/Y] às [node:changed:custom:H:i] </p>\r\n    </div>\r\n    <div class=\"col-lg-6 col-md-6 col-sm-12\">\r\n        <ul class=\"compartilhar\">\r\n            <li class=\"compartilhar\">\r\n                <a class=\"compartilhar\" href=\"https://www.facebook.com/sharer/sharer.php?u=[node:url]\" target=\"_blank\"\r\n                    rel=\"noopener noreferrer\">\r\n                    <i class=\"fab fa-facebook\"></i>\r\n                </a>\r\n            </li>\r\n            <li class=\"compartilhar\">\r\n                <a class=\"compartilhar\" href=\"https://twitter.com/intent/tweet?text=[node:url]\" target=\"_blank\"\r\n                    rel=\"noopener noreferrer\">\r\n                    <i class=\"fab fa-twitter\"></i>\r\n                </a>\r\n            </li>\r\n            <li class=\"compartilhar\">\r\n                <a class=\"compartilhar\" href=\"https://www.linkedin.com/sharing/share-offsite/?url=[node:url]\" target=\"_blank\"\r\n                    rel=\"noopener noreferrer\">\r\n                    <i class=\"fab fa-linkedin\"></i>\r\n                </a>\r\n            </li>\r\n            <li class=\"compartilhar\">\r\n                <a class=\"compartilhar\" href=\"https://t.me/share/url?url=[node:url]\" target=\"_blank\" rel=\"noopener noreferrer\">\r\n                    <i class=\"fab fa-telegram\"></i>\r\n                </a>\r\n            </li>\r\n            <li class=\"compartilhar\">\r\n                <a class=\"compartilhar\" href=\"https://api.whatsapp.com/send?text=[node:url]\" target=\"_blank\"\r\n                    rel=\"noopener noreferrer\">\r\n                    <i class=\"fab fa-whatsapp\"></i>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</div>"
+    format: codigo
+type: token
+type_label: 'Token field'
+entities:
+  node: node

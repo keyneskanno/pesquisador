@@ -1,0 +1,44 @@
+uuid: bd764e7e-8379-414f-a2d4-5ba929822e77
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+name: breadcrumbs
+label: Breadcrumbs
+group: null
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: true
+    pages: "<front>\r\ninicio\r\nuser/*"
+    uuid: a28dc462-078a-4749-8550-8c93b0a7b9a3
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      f67b9477-e682-492e-89f3-7e00f8f0e0b8:
+        id: system_breadcrumb_block
+        label: 'Trilha de navegação'
+        provider: system
+        label_display: '0'
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        custom_id: system_breadcrumb_block
+        theme: ufu_radix
+        css_class: ''
+        unique: 1
+        context_id: breadcrumbs
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: f67b9477-e682-492e-89f3-7e00f8f0e0b8
+    id: blocks
+    saved: false
+    uuid: 7b68f7c4-da58-4497-aac6-52d1e360fd2f
+    include_default_blocks: 0
+weight: 0

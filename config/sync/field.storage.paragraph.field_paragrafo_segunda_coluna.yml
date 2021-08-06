@@ -1,0 +1,19 @@
+uuid: e2ce6611-9a2e-4bd6-b2ba-b6f1dbf5964c
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_paragrafo_segunda_coluna
+field_name: field_paragrafo_segunda_coluna
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

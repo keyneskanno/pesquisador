@@ -1,0 +1,26 @@
+uuid: 3a70ccf2-0dd7-4f3b-9c99-b3def06cff8e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagem.field_paragrafo_imagem
+    - image.style.full_hd_12_colunas
+    - paragraphs.paragraphs_type.imagem
+  module:
+    - image
+id: paragraph.imagem.default
+targetEntityType: paragraph
+bundle: imagem
+mode: default
+content:
+  field_paragrafo_imagem:
+    weight: 0
+    settings:
+      preview_image_style: full_hd_12_colunas
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

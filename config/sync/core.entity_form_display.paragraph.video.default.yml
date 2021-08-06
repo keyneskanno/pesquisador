@@ -1,0 +1,23 @@
+uuid: b14ba313-e8d0-43fc-a65b-a555f3bbddef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_paragrafo_video_playlist
+    - paragraphs.paragraphs_type.video
+  module:
+    - video_embed_field
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_paragrafo_video_playlist:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  status: true

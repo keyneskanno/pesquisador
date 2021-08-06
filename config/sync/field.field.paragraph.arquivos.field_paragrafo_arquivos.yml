@@ -1,0 +1,27 @@
+uuid: d7e5ce12-c8b0-416c-974d-ab9f9ad18fa8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragrafo_arquivos
+    - paragraphs.paragraphs_type.arquivos
+  module:
+    - file
+id: paragraph.arquivos.field_paragrafo_arquivos
+field_name: field_paragrafo_arquivos
+entity_type: paragraph
+bundle: arquivos
+label: Arquivos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'arquivos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip rar 7z doc docx xls xlsx ppt pptx pps ppx odt ods odp pdf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,24 @@
+uuid: 7912e703-ad62-4f0a-9fe5-63dfe9246ca9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.arquivos.field_paragrafo_arquivos
+    - paragraphs.paragraphs_type.arquivos
+  module:
+    - file
+id: paragraph.arquivos.default
+targetEntityType: paragraph
+bundle: arquivos
+mode: default
+content:
+  field_paragrafo_arquivos:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true
