@@ -1,0 +1,122 @@
+uuid: ba3e1429-7339-42a3-8257-163dd5a3d4d8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.evento.field_evento_data_evento
+    - field.field.node.evento.field_evento_imagem_capa
+    - field.field.node.evento.field_evento_imagem_destaque
+    - field.field.node.evento.field_evento_linha_fina
+    - field.field.node.evento.field_evento_paragrafos
+    - node.type.evento
+  module:
+    - colorbox
+    - datetime_range
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_evento_imagem_destaque
+      bottom:
+        - node_title
+        - field_evento_linha_fina
+        - field_evento_data_evento
+        - node_link
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h3
+          class: ''
+          link: false
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Leia mais'
+          'link class': ''
+          wrapper: ''
+          class: ''
+id: node.evento.teaser
+targetEntityType: node
+bundle: evento
+mode: teaser
+content:
+  field_evento_data_evento:
+    type: daterange_default
+    weight: 3
+    region: bottom
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short
+      separator: à
+    third_party_settings: {  }
+  field_evento_imagem_destaque:
+    type: colorbox
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      colorbox_node_style: ''
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+  field_evento_linha_fina:
+    type: string
+    weight: 2
+    region: bottom
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_evento_imagem_capa: true
+  field_evento_paragrafos: true
+  langcode: true
+  links: true

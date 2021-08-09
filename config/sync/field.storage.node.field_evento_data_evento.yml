@@ -1,0 +1,20 @@
+uuid: b75f89a2-983f-4f24-baea-a46b00aae09a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.field_evento_data_evento
+field_name: field_evento_data_evento
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

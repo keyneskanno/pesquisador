@@ -6,7 +6,7 @@ dependencies:
     - php
 name: Código
 format: codigo
-weight: 0
+weight: -6
 filters:
   php_code:
     id: php_code

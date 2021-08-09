@@ -1,0 +1,38 @@
+uuid: 31deb765-0c2b-4c2b-ba07-287ffb98f493
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evento_imagem_capa
+    - node.type.evento
+  module:
+    - image
+id: node.evento.field_evento_imagem_capa
+field_name: field_evento_imagem_capa
+entity_type: node
+bundle: evento
+label: 'Imagem de capa'
+description: 'As imagens deverão possuir aspecto 16:9, caso o contrário ela pode ser cortada.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'eventos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 1920x1080
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

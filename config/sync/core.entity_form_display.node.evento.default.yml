@@ -1,0 +1,149 @@
+uuid: 757f9058-8271-43fc-8b85-5c6669f93b8d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.evento.field_evento_data_evento
+    - field.field.node.evento.field_evento_imagem_capa
+    - field.field.node.evento.field_evento_imagem_destaque
+    - field.field.node.evento.field_evento_linha_fina
+    - field.field.node.evento.field_evento_paragrafos
+    - image.style.evento_miniatura
+    - node.type.evento
+  module:
+    - datetime_range
+    - field_group
+    - image
+    - paragraphs
+    - path
+third_party_settings:
+  field_group:
+    group_imagem_destaque:
+      children:
+        - field_evento_imagem_destaque
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Imagem de destaque'
+    group_imagem_capa:
+      children:
+        - field_evento_imagem_capa
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Imagem de Capa'
+id: node.evento.default
+targetEntityType: node
+bundle: evento
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_evento_data_evento:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_evento_imagem_capa:
+    weight: 5
+    settings:
+      preview_image_style: full_hd_12_colunas
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_evento_imagem_destaque:
+    weight: 3
+    settings:
+      preview_image_style: evento_miniatura
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_evento_linha_fina:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_evento_paragrafos:
+    type: paragraphs
+    weight: 5
+    settings:
+      title: Parágrafo
+      title_plural: Parágrafos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

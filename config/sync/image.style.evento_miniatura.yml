@@ -1,0 +1,15 @@
+uuid: d02d9417-5121-485e-a11d-72d7be91a6de
+langcode: pt-br
+status: true
+dependencies: {  }
+name: evento_miniatura
+label: 'Evento Miniatura (80 x 120)'
+effects:
+  64c0ffc7-b105-4f0d-9a3c-d5861c6d1fec:
+    uuid: 64c0ffc7-b105-4f0d-9a3c-d5861c6d1fec
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 120
+      anchor: center-center

@@ -1,0 +1,66 @@
+uuid: 37fa8c37-a76d-4024-8e3e-93d30ff7ff77
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evento_paragrafos
+    - node.type.evento
+    - paragraphs.paragraphs_type.arquivos
+    - paragraphs.paragraphs_type.galeria
+    - paragraphs.paragraphs_type.imagem
+    - paragraphs.paragraphs_type.imagem_e_texto
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.texto_duas_colunas
+    - paragraphs.paragraphs_type.texto_e_imagem
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.evento.field_evento_paragrafos
+field_name: field_evento_paragrafos
+entity_type: node
+bundle: evento
+label: Parágrafos
+description: 'Adicione novos parágrafos e ordene-os de acordo com o desejado.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      arquivos: arquivos
+      galeria: galeria
+      imagem: imagem
+      imagem_e_texto: imagem_e_texto
+      texto: texto
+      texto_duas_colunas: texto_duas_colunas
+      texto_e_imagem: texto_e_imagem
+      video: video
+    target_bundles_drag_drop:
+      arquivos:
+        enabled: true
+        weight: 9
+      galeria:
+        enabled: true
+        weight: 10
+      imagem:
+        enabled: true
+        weight: 11
+      imagem_e_texto:
+        enabled: true
+        weight: 12
+      texto:
+        enabled: true
+        weight: 13
+      texto_duas_colunas:
+        enabled: true
+        weight: 14
+      texto_e_imagem:
+        enabled: true
+        weight: 15
+      video:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

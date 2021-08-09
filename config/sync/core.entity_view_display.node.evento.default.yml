@@ -1,0 +1,114 @@
+uuid: 745931ab-fbc3-4b47-a2bd-00ea06c3dad0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.evento.field_evento_data_evento
+    - field.field.node.evento.field_evento_imagem_capa
+    - field.field.node.evento.field_evento_imagem_destaque
+    - field.field.node.evento.field_evento_linha_fina
+    - field.field.node.evento.field_evento_paragrafos
+    - image.style.full_hd
+    - node.type.evento
+  module:
+    - datetime_range
+    - ds
+    - entity_reference_revisions
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - links
+        - node_title
+        - field_evento_linha_fina
+        - 'dynamic_token_field:node-compartilhar'
+        - field_evento_imagem_capa
+        - field_evento_data_evento
+        - field_evento_paragrafos
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h1
+          class: ''
+          link: false
+      'dynamic_token_field:node-compartilhar':
+        plugin_id: 'dynamic_token_field:node-compartilhar'
+        weight: 3
+        label: hidden
+        formatter: default
+id: node.evento.default
+targetEntityType: node
+bundle: evento
+mode: default
+content:
+  field_evento_data_evento:
+    weight: 5
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: short
+      separator: à
+    third_party_settings: {  }
+    type: daterange_default
+    region: main
+  field_evento_imagem_capa:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: full_hd
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: main
+  field_evento_linha_fina:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_evento_paragrafos:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: main
+  links:
+    weight: 0
+    region: main
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_evento_imagem_destaque: true
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 916f2f8d-6c75-4114-be70-3b53b4d0f284
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: eventos
+label: Eventos
+type: 'canonical_entities:node'
+pattern: 'eventos/[node:field_evento_data_evento:start_date:custom:Y]/[node:field_evento_data_evento:start_date:custom:m]/[node:title]'
+selection_criteria:
+  04cbbcad-1bdb-4459-9958-e4961d2b0528:
+    id: node_type
+    bundles:
+      evento: evento
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 04cbbcad-1bdb-4459-9958-e4961d2b0528
+selection_logic: and
+weight: -5
+relationships: {  }

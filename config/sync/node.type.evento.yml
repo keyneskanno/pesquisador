@@ -1,0 +1,17 @@
+uuid: 9929f379-a381-4de9-b3dc-92e19848bd79
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Evento
+type: evento
+description: 'Crie um novo <em>Evento</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -3,6 +3,7 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - views.view.eventos
     - views.view.noticias
   module:
     - system
@@ -105,6 +106,25 @@ reactions:
           block_class:
             classes: ''
         uuid: 46165889-7a5b-4699-ba08-5c60193f0dbf
+      6739562e-7f6f-4db5-944b-944463a762b0:
+        id: 'views_block:eventos-bloco_eventos'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: third_area
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_eventos_bloco_eventos
+        theme: ufu_radix
+        css_class: ''
+        unique: 0
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 6739562e-7f6f-4db5-944b-944463a762b0
     id: blocks
     saved: false
     uuid: c10a35e9-0765-47ee-9b7e-458362f95063
