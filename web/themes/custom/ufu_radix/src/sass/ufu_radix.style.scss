@@ -1,6 +1,7 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
 
 $primary: #3B3174;
+$primary-90:  #625A90;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -45,6 +46,19 @@ $cyan:    #17a2b8 !default;
     background-color: $primary;
     border-radius: 20px;
     border: 2px solid $white;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: $primary-90;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
+    color: $white;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background: $primary;
 }
 
 .page__bottom a {
