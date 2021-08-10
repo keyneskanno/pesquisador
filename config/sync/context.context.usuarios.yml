@@ -1,0 +1,67 @@
+uuid: f3120d4d-d90c-4abf-8519-20b3023eee09
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+name: usuarios
+label: Usuários
+group: null
+description: ''
+requireAllConditions: true
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    uuid: 777eb86a-ba1a-4daf-adc7-352303b7f91d
+    context_mapping: {  }
+  current_theme:
+    id: current_theme
+    theme: ufu_radix
+    negate: 0
+    uuid: 4d5e7fd6-b6e0-4c7a-a797-9efb078f48e2
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      86e15eaf-6d3a-4ea0-a186-2f06382203c6:
+        id: system_main_block
+        label: 'Conteúdo da página principal'
+        provider: system
+        label_display: '0'
+        region: content
+        weight: '1'
+        context_mapping: {  }
+        custom_id: system_main_block
+        theme: ufu_radix
+        css_class: ''
+        unique: 0
+        context_id: usuarios
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 86e15eaf-6d3a-4ea0-a186-2f06382203c6
+      7be5be5a-6aaf-4618-8e4e-1026e08f69cd:
+        id: page_title_block
+        label: 'Título da página'
+        provider: core
+        label_display: '0'
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        custom_id: page_title_block
+        theme: ufu_radix
+        css_class: ''
+        unique: 0
+        context_id: usuarios
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 7be5be5a-6aaf-4618-8e4e-1026e08f69cd
+    id: blocks
+    saved: false
+    uuid: e9ba71ec-f8e1-438d-b98f-62164507d233
+    include_default_blocks: 0
+weight: 0
