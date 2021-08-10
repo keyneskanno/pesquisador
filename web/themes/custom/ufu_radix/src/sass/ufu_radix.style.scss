@@ -189,6 +189,10 @@ $cyan:    #17a2b8 !default;
     display: block;
 }
 
+.bs-region--right .noticia__chapeu {
+    padding: 0 0 5px !important;
+}
+
 .noticia__linha-fina,
 .evento__linha-fina {
     font-size: 1.2em;

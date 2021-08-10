@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - system.menu.main
+  content:
+    - 'block_content:basic:691169f2-f126-4374-bdef-8d0cc1f63b8a'
   module:
+    - block_content
     - help
     - menu_block
     - system
@@ -155,7 +158,7 @@ reactions:
         label_type: block
         label_link: 0
         region: bottom
-        weight: '-4'
+        weight: '-5'
         context_mapping: {  }
         custom_id: menu_block_main_ensino
         theme: ufu_radix
@@ -181,7 +184,7 @@ reactions:
         label_type: block
         label_link: 0
         region: bottom
-        weight: '-3'
+        weight: '-4'
         context_mapping: {  }
         custom_id: menu_block_main_pesquisa_inovacao
         theme: ufu_radix
@@ -207,7 +210,7 @@ reactions:
         label_type: block
         label_link: 0
         region: bottom
-        weight: '-2'
+        weight: '-3'
         context_mapping: {  }
         custom_id: menu_block_main_comunidade
         theme: ufu_radix
@@ -233,7 +236,7 @@ reactions:
         label_type: block
         label_link: 0
         region: bottom
-        weight: '0'
+        weight: '-2'
         context_mapping: {  }
         custom_id: menu_block_main
         theme: ufu_radix
@@ -259,7 +262,7 @@ reactions:
         label_type: block
         label_link: 0
         region: bottom
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         custom_id: menu_block_main_conheca_ufu
         theme: ufu_radix
@@ -296,6 +299,52 @@ reactions:
           block_class:
             classes: ''
         uuid: 6cb5511b-d433-4d71-89f5-42325a56a421
+      11bdf88f-20ca-4152-9cb6-de87d5d76864:
+        id: 'block_content:691169f2-f126-4374-bdef-8d0cc1f63b8a'
+        label: Créditos
+        provider: block_content
+        label_display: '0'
+        status: true
+        info: ''
+        view_mode: full
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        custom_id: block_content_691169f2_f126_4374_bdef_8d0cc1f63b8a
+        theme: ufu_radix
+        css_class: ''
+        unique: 1
+        context_id: sitewide
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 11bdf88f-20ca-4152-9cb6-de87d5d76864
+      c805dcc6-2663-4e4d-b822-e8b9de3d2d86:
+        id: 'menu_block:main'
+        label: Ingresso
+        provider: menu_block
+        label_display: visible
+        follow: 0
+        follow_parent: active
+        level: '1'
+        depth: '0'
+        expand_all_items: true
+        parent: 'main:menu_link_content:1bf77e6f-12d2-4a70-b6b1-53c519a70190'
+        suggestion: main
+        label_type: block
+        label_link: 0
+        region: bottom
+        weight: '-6'
+        context_mapping: {  }
+        custom_id: menu_block_main_ingresso
+        theme: ufu_radix
+        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        unique: 1
+        context_id: sitewide
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: c805dcc6-2663-4e4d-b822-e8b9de3d2d86
     id: blocks
     saved: false
     uuid: be3184e0-f984-4437-9347-3d704206110c
