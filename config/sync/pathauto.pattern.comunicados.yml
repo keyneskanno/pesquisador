@@ -1,0 +1,22 @@
+uuid: a4ef916d-e53a-4f28-bfb8-015ef275f319
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: comunicados
+label: Comunicados
+type: 'canonical_entities:node'
+pattern: 'comunicados/[node:created:custom:Y]/[node:created:custom:m]/[node:title]'
+selection_criteria:
+  07ac5e2b-19fa-48f5-bb16-eab538ab3fc4:
+    id: node_type
+    bundles:
+      comunicado: comunicado
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 07ac5e2b-19fa-48f5-bb16-eab538ab3fc4
+selection_logic: and
+weight: -5
+relationships: {  }

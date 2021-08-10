@@ -1,0 +1,19 @@
+uuid: 63d68602-2136-4195-a00f-5818aaf7c718
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comunicado_setor_resp
+    - node.type.comunicado
+id: node.comunicado.field_comunicado_setor_resp
+field_name: field_comunicado_setor_resp
+entity_type: node
+bundle: comunicado
+label: 'Setor(es) responsável(eis)'
+description: 'Informe o Setor Responsável ou os Setores Responsáveis.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

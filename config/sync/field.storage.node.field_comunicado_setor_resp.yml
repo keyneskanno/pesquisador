@@ -1,0 +1,21 @@
+uuid: 4a4dd571-e181-4c45-b01d-0e916d302c0b
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_comunicado_setor_resp
+field_name: field_comunicado_setor_resp
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

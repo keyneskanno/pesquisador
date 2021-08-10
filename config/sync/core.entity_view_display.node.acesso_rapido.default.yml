@@ -1,0 +1,52 @@
+uuid: b7fe9a4e-e51f-4f60-a9ab-82e0db47f543
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.acesso_rapido.field_acesso_rapido_icone
+    - field.field.node.acesso_rapido.field_acesso_rapido_link
+    - node.type.acesso_rapido
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - 'dynamic_token_field:node-acesso_rapido'
+    fields:
+      'dynamic_token_field:node-acesso_rapido':
+        plugin_id: 'dynamic_token_field:node-acesso_rapido'
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.acesso_rapido.default
+targetEntityType: node
+bundle: acesso_rapido
+mode: default
+content: {  }
+hidden:
+  field_acesso_rapido_icone: true
+  field_acesso_rapido_link: true
+  langcode: true
+  links: true

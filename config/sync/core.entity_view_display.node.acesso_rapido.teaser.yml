@@ -1,0 +1,25 @@
+uuid: 145f9e5c-739f-4c17-9e66-ee3f0efce1fb
+langcode: pt-br
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.acesso_rapido.field_acesso_rapido_icone
+    - field.field.node.acesso_rapido.field_acesso_rapido_link
+    - node.type.acesso_rapido
+  module:
+    - user
+id: node.acesso_rapido.teaser
+targetEntityType: node
+bundle: acesso_rapido
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_acesso_rapido_icone: true
+  field_acesso_rapido_link: true
+  langcode: true

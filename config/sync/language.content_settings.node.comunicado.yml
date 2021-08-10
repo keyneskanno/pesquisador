@@ -1,0 +1,11 @@
+uuid: 13641ff5-22d4-4c9e-b7d3-7c3f6da77a2c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.comunicado
+id: node.comunicado
+target_entity_type_id: node
+target_bundle: comunicado
+default_langcode: site_default
+language_alterable: false

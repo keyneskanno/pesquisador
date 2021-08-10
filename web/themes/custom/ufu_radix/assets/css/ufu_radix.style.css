@@ -62,17 +62,20 @@
   max-height: calc(100vh - 60px);
 }
 
+.grid .comunicado__node-link,
 .grid .noticia__node-link,
 .grid .evento__node-link {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 
+.grid .comunicado__node-link a,
 .grid .noticia__node-link a,
 .grid .evento__node-link a {
   margin-top: 10px;
   font-weight: bold;
 }
 
+.grid .comunicado__node-link a::after,
 .grid .noticia__node-link a::after,
 .grid .evento__node-link a::after {
   margin-left: 10px;
@@ -87,6 +90,8 @@
   background: #dee2e6;
 }
 
+.grid .comunicado__node-link a:hover,
+.grid .comunicado__node-link a:focus,
 .grid .noticia__node-link a:hover,
 .grid .noticia__node-link a:focus {
   text-decoration: none;
@@ -99,6 +104,7 @@
   text-decoration: none;
 }
 
+.grid .comunicado__node-changed-date,
 .grid .noticia__linha-fina,
 .grid .evento__linha-fina {
   font-size: 1em;
@@ -128,6 +134,11 @@
   margin-top: 10px;
 }
 
+.grid .comunicado__setor-resp {
+  margin-bottom: 0px;
+}
+
+.grid .comunicado__setor-resp,
 .noticia__chapeu {
   color: #3B3174;
   text-transform: uppercase;
@@ -148,6 +159,7 @@
   margin: 20px 0;
 }
 
+.comunicado__setor-resp,
 .evento__data-evento {
   margin-bottom: 20px;
 }

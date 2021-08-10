@@ -1,0 +1,22 @@
+uuid: f3760073-ce1e-472d-a75f-6f3957083851
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: acesso_rapido
+label: 'Acesso rápido'
+type: 'canonical_entities:node'
+pattern: 'acesso-rapido/[node:title]'
+selection_criteria:
+  0814d992-8223-4c7c-8f5b-40ad09509154:
+    id: node_type
+    bundles:
+      acesso_rapido: acesso_rapido
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 0814d992-8223-4c7c-8f5b-40ad09509154
+selection_logic: and
+weight: -5
+relationships: {  }

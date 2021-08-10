@@ -1,0 +1,28 @@
+uuid: ed8729ef-f763-4cbb-933d-4143a2dc1ab9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - file
+    - node
+    - svg_image_field
+id: node.field_acesso_rapido_icone
+field_name: field_acesso_rapido_icone
+entity_type: node
+type: svg_image_field
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+  target_type: file
+  display_field: false
+  display_default: false
+module: svg_image_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

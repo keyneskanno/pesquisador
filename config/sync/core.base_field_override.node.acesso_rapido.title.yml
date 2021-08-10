@@ -1,0 +1,18 @@
+uuid: 591bcdb7-799c-4ab0-8860-39a7860e3fa7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.acesso_rapido
+id: node.acesso_rapido.title
+field_name: title
+entity_type: node
+bundle: acesso_rapido
+label: 'Título do Atalho'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

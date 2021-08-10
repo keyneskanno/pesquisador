@@ -1,0 +1,11 @@
+uuid: 2c1aabe3-dc32-4b21-a9f1-97d900503f2f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.acesso_rapido
+id: node.acesso_rapido
+target_entity_type_id: node
+target_bundle: acesso_rapido
+default_langcode: site_default
+language_alterable: false

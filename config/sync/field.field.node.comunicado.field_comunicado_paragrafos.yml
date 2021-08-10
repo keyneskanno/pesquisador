@@ -1,0 +1,66 @@
+uuid: 9228be86-f597-4d1f-813c-94dda34de3de
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comunicado_paragrafos
+    - node.type.comunicado
+    - paragraphs.paragraphs_type.arquivos
+    - paragraphs.paragraphs_type.galeria
+    - paragraphs.paragraphs_type.imagem
+    - paragraphs.paragraphs_type.imagem_e_texto
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.texto_duas_colunas
+    - paragraphs.paragraphs_type.texto_e_imagem
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.comunicado.field_comunicado_paragrafos
+field_name: field_comunicado_paragrafos
+entity_type: node
+bundle: comunicado
+label: Parágrafos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      texto: texto
+      galeria: galeria
+      imagem: imagem
+      imagem_e_texto: imagem_e_texto
+      texto_duas_colunas: texto_duas_colunas
+      texto_e_imagem: texto_e_imagem
+      video: video
+      arquivos: arquivos
+    target_bundles_drag_drop:
+      arquivos:
+        enabled: true
+        weight: -10
+      galeria:
+        enabled: true
+        weight: -16
+      imagem:
+        enabled: true
+        weight: -15
+      imagem_e_texto:
+        enabled: true
+        weight: -14
+      texto:
+        enabled: true
+        weight: -17
+      texto_duas_colunas:
+        enabled: true
+        weight: -13
+      texto_e_imagem:
+        enabled: true
+        weight: -12
+      video:
+        enabled: true
+        weight: -11
+field_type: entity_reference_revisions

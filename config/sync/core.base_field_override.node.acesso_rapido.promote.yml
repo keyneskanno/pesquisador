@@ -1,0 +1,22 @@
+uuid: 32d26e17-98be-4c04-804c-3ccdffff8456
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.acesso_rapido
+id: node.acesso_rapido.promote
+field_name: promote
+entity_type: node
+bundle: acesso_rapido
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

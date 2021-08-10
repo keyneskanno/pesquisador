@@ -3,6 +3,8 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - views.view.acesso_rapido
+    - views.view.comunicados
     - views.view.eventos
     - views.view.noticias
   module:
@@ -125,6 +127,44 @@ reactions:
           block_class:
             classes: ''
         uuid: 6739562e-7f6f-4db5-944b-944463a762b0
+      b3357b9a-068e-466f-a120-85b0a4f5d9c9:
+        id: 'views_block:acesso_rapido-bloco_acesso_rapido'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: fourth_area
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_acesso_rapido_bloco_acesso_rapido
+        theme: ufu_radix
+        css_class: ''
+        unique: 1
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: b3357b9a-068e-466f-a120-85b0a4f5d9c9
+      e2988e61-867f-4230-a758-9b4557f364e6:
+        id: 'views_block:comunicados-bloco_noticias_recentes'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: fifth_area
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_comunicados_bloco_noticias_recentes
+        theme: ufu_radix
+        css_class: ''
+        unique: 0
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: e2988e61-867f-4230-a758-9b4557f364e6
     id: blocks
     saved: false
     uuid: c10a35e9-0765-47ee-9b7e-458362f95063

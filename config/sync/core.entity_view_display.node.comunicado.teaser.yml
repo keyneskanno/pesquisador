@@ -1,0 +1,83 @@
+uuid: 603c7b64-3a3a-4b2d-94ca-cae49a86aafe
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.comunicado.field_comunicado_paragrafos
+    - field.field.node.comunicado.field_comunicado_setor_resp
+    - node.type.comunicado
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_comunicado_setor_resp
+        - node_title
+        - node_changed_date
+        - node_link
+    fields:
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h3
+          class: ''
+          link: false
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Leia mais'
+          'link class': ''
+          wrapper: ''
+          class: ''
+id: node.comunicado.teaser
+targetEntityType: node
+bundle: comunicado
+mode: teaser
+content:
+  field_comunicado_setor_resp:
+    type: string
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_comunicado_paragrafos: true
+  langcode: true
+  links: true
