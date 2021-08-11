@@ -157,12 +157,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
+        region: bottom_first
         weight: '-5'
         context_mapping: {  }
         custom_id: menu_block_main_ensino
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:
@@ -183,12 +183,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
+        region: bottom_second
         weight: '-4'
         context_mapping: {  }
         custom_id: menu_block_main_pesquisa_inovacao
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:
@@ -209,12 +209,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
+        region: bottom_third
         weight: '-3'
         context_mapping: {  }
         custom_id: menu_block_main_comunidade
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:
@@ -235,12 +235,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
-        weight: '-2'
+        region: bottom_fourth
+        weight: '-6'
         context_mapping: {  }
         custom_id: menu_block_main
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:
@@ -261,12 +261,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
+        region: bottom_fifth
         weight: '-1'
         context_mapping: {  }
         custom_id: menu_block_main_conheca_ufu
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:
@@ -287,12 +287,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
+        region: bottom_sixth
         weight: '0'
         context_mapping: {  }
         custom_id: menu_block_main_fale_ufu
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:
@@ -333,12 +333,12 @@ reactions:
         suggestion: main
         label_type: block
         label_link: 0
-        region: bottom
+        region: bottom_first
         weight: '-6'
         context_mapping: {  }
         custom_id: menu_block_main_ingresso
         theme: ufu_radix
-        css_class: 'col-lg-2 col-md-2 col-sm-12 mb-5'
+        css_class: mb-5
         unique: 1
         context_id: sitewide
         third_party_settings:

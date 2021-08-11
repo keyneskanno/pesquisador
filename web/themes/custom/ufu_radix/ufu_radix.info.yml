@@ -19,6 +19,14 @@ regions:
   third_area: Third area
   fourth_area: Fourth area
   fifth_area: Fifth area
+  sixth_area: Sixth area
+  seventh_area: Seventh area
+  bottom_first: Bottom first area
+  bottom_second: Bottom second area
+  bottom_third: Bottom third area
+  bottom_fourth: Bottom fourth area
+  bottom_fifth: Bottom fifth area
+  bottom_sixth: Bottom sixth area
   bottom: Page bottom
   footer: Footer
 

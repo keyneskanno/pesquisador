@@ -61,16 +61,40 @@ $cyan:    #17a2b8 !default;
     background: $primary;
 }
 
-.page__bottom a {
+.bottom__first a,
+.bottom__second a,
+.bottom__third a,
+.bottom__fourth a,
+.bottom__fifth a,
+.bottom__sixth a,
+.page__bottom a{
     color: $gray-500;
     padding: 2.5px 0;
 }
 
+.bottom__first a:hover,
+.bottom__first a:focus,
+.bottom__second a:hover,
+.bottom__second a:focus,
+.bottom__third a:hover,
+.bottom__third a:focus,
+.bottom__fourth a:hover,
+.bottom__fourth a:focus,
+.bottom__fifth a:hover,
+.bottom__fifth a:focus,
+.bottom__sixth a:hover,
+.bottom__sixth a:focus,
 .page__bottom a:hover,
 .page__bottom a:focus {
     color: $gray-200;
 }
 
+.bottom__first h2,
+.bottom__second h2,
+.bottom__third h2,
+.bottom__fourth h2,
+.bottom__fifth h2,
+.bottom__sixth h2,
 .page__bottom h2 {
     font-size: 1.5rem;
     text-transform: uppercase;

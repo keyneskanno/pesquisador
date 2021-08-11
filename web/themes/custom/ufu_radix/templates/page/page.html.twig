@@ -119,6 +119,72 @@
       </div>
     {% endif %}
 
+    {% if page.sixth_area %}
+      <div class="sixth__area container-fluid bg-primary text-light">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            {{ page.sixth_area }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.seventh_area %}
+      <div class="seventh__area container-fluid">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            {{ page.seventh_area }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="container-fluid bg-primary text-light">
+      <div class="row no-gutters">
+        <div class="container py-5">
+          <div class="row">
+
+            {% if page.bottom_first %}
+              <div class="bottom__first col">
+                {{ page.bottom_first }}
+              </div>
+            {% endif %}
+
+            {% if page.bottom_second %}
+              <div class="bottom__second col">
+                {{ page.bottom_second }}
+              </div>
+            {% endif %}
+
+            {% if page.bottom_third %}
+              <div class="bottom__third col">
+                {{ page.bottom_third }}
+              </div>
+            {% endif %}
+
+            {% if page.bottom_fourth %}
+              <div class="bottom__fourth col">
+                {{ page.bottom_fourth }}
+              </div>
+            {% endif %}            
+
+            {% if page.bottom_fifth %}
+              <div class="bottom__fifth col">
+                {{ page.bottom_fifth }}
+              </div>
+            {% endif %}
+
+            {% if page.bottom_sixth %}
+              <div class="bottom__sixth col">
+                {{ page.bottom_sixth }}
+              </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     {% if page.bottom %}
       <div class="page__bottom bg-primary text-light">
         <div class="row no-gutters">
@@ -137,7 +203,7 @@
     <footer class="page__footer">
       <div class="container-fluid ">
         <div class="row no-gutters">
-          <div class="container py-5">
+          <div class="container py-2">
             {{ page.footer }}
           </div>
         </div>
