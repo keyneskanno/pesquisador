@@ -145,7 +145,7 @@ reactions:
         uuid: e6227c61-498b-4ec1-98d3-d1366eda2db4
       79357367-9d04-4688-9240-8727e4d476c0:
         id: 'menu_block:main'
-        label: Ensino
+        label: Ingresso
         provider: menu_block
         label_display: visible
         follow: 0
@@ -160,7 +160,7 @@ reactions:
         region: bottom_first
         weight: '-5'
         context_mapping: {  }
-        custom_id: menu_block_main_ensino
+        custom_id: menu_block_main_ingresso
         theme: ufu_radix
         css_class: mb-5
         unique: 1
@@ -275,7 +275,7 @@ reactions:
         uuid: 3101818b-18a9-497d-8aa9-b20ebb72da46
       6cb5511b-d433-4d71-89f5-42325a56a421:
         id: 'menu_block:main'
-        label: 'Fale com a UFU'
+        label: 'Mais UFU'
         provider: menu_block
         label_display: visible
         follow: 1
@@ -319,32 +319,6 @@ reactions:
           block_class:
             classes: ''
         uuid: 11bdf88f-20ca-4152-9cb6-de87d5d76864
-      c805dcc6-2663-4e4d-b822-e8b9de3d2d86:
-        id: 'menu_block:main'
-        label: Ingresso
-        provider: menu_block
-        label_display: visible
-        follow: 0
-        follow_parent: active
-        level: '1'
-        depth: '0'
-        expand_all_items: true
-        parent: 'main:menu_link_content:1bf77e6f-12d2-4a70-b6b1-53c519a70190'
-        suggestion: main
-        label_type: block
-        label_link: 0
-        region: bottom_first
-        weight: '-6'
-        context_mapping: {  }
-        custom_id: menu_block_main_ingresso
-        theme: ufu_radix
-        css_class: mb-5
-        unique: 1
-        context_id: sitewide
-        third_party_settings:
-          block_class:
-            classes: ''
-        uuid: c805dcc6-2663-4e4d-b822-e8b9de3d2d86
     id: blocks
     saved: false
     uuid: be3184e0-f984-4437-9347-3d704206110c
