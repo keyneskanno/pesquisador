@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.noticia.field_noticia_linha_fina
     - field.field.node.noticia.field_noticia_local_exibicao
     - field.field.node.noticia.field_noticia_paragrafos
+    - field.field.node.noticia.field_palavras_chave
     - image.style.full_hd_12_colunas
     - node.type.noticia
   module:
@@ -30,6 +31,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Imagem de destaque'
+    group_palavras_chave:
+      children:
+        - field_palavras_chave
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Palavras-chave
 id: node.noticia.default
 targetEntityType: node
 bundle: noticia
@@ -37,7 +52,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -69,7 +84,7 @@ content:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_noticia_paragrafos:
     type: paragraphs
@@ -90,16 +105,26 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
+  field_palavras_chave:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
-    weight: 6
+    weight: 8
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -107,7 +132,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 12
     region: content
     third_party_settings: {  }
   title:
@@ -120,7 +145,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60

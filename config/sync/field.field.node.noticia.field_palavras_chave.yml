@@ -1,0 +1,29 @@
+uuid: 57157cd3-4273-48b2-b7ee-c5769013a3d3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_palavras_chave
+    - node.type.noticia
+    - taxonomy.vocabulary.tags
+id: node.noticia.field_palavras_chave
+field_name: field_palavras_chave
+entity_type: node
+bundle: noticia
+label: Palavras-chave
+description: 'Insira palavras-chave que referenciem o conteúdo. Essas palavras serão usadas para facilitar a busca.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

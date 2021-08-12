@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.evento.field_evento_imagem_destaque
     - field.field.node.evento.field_evento_linha_fina
     - field.field.node.evento.field_evento_paragrafos
+    - field.field.node.evento.field_palavras_chave
     - image.style.full_hd
     - node.type.evento
   module:
@@ -47,6 +48,7 @@ third_party_settings:
         - field_evento_imagem_capa
         - field_evento_data_evento
         - field_evento_paragrafos
+        - field_palavras_chave
     fields:
       node_title:
         plugin_id: node_title
@@ -103,6 +105,16 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: main
+  field_palavras_chave:
+    weight: 7
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
     region: main
   links:
     weight: 0

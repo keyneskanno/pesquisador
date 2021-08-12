@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.noticia.field_noticia_linha_fina
     - field.field.node.noticia.field_noticia_local_exibicao
     - field.field.node.noticia.field_noticia_paragrafos
+    - field.field.node.noticia.field_palavras_chave
     - node.type.noticia
   module:
     - user
@@ -28,4 +29,5 @@ hidden:
   field_noticia_linha_fina: true
   field_noticia_local_exibicao: true
   field_noticia_paragrafos: true
+  field_palavras_chave: true
   langcode: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.noticia.field_noticia_linha_fina
     - field.field.node.noticia.field_noticia_local_exibicao
     - field.field.node.noticia.field_noticia_paragrafos
+    - field.field.node.noticia.field_palavras_chave
     - image.style.full_hd
     - node.type.noticia
   module:
@@ -46,6 +47,7 @@ third_party_settings:
         - 'dynamic_token_field:node-compartilhar'
         - field_noticia_imagem_destaque
         - field_noticia_paragrafos
+        - field_palavras_chave
     fields:
       node_title:
         plugin_id: node_title
@@ -101,6 +103,16 @@ content:
       link: ''
     third_party_settings: {  }
     region: main
+  field_palavras_chave:
+    type: entity_reference_label
+    weight: 7
+    region: main
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
   links:
     weight: 0
     region: main

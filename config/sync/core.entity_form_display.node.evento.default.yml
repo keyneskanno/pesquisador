@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.evento.field_evento_imagem_destaque
     - field.field.node.evento.field_evento_linha_fina
     - field.field.node.evento.field_evento_paragrafos
+    - field.field.node.evento.field_palavras_chave
     - image.style.evento_miniatura
     - node.type.evento
   module:
@@ -46,6 +47,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Imagem de Capa'
+    group_palavras_chave:
+      children:
+        - field_palavras_chave
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Palavras-chave
 id: node.evento.default
 targetEntityType: node
 bundle: evento
@@ -53,7 +68,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -106,16 +121,26 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
+  field_palavras_chave:
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
-    weight: 6
+    weight: 7
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -123,7 +148,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   title:
@@ -136,7 +161,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60

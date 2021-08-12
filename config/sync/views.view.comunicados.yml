@@ -300,9 +300,9 @@ display:
           uses_fields: false
           col_xs: col-12
           col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_md: col-md-6
+          col_lg: col-lg-6
+          col_xl: col-xl-6
       row:
         type: 'ds_entity:node'
         options:
@@ -351,7 +351,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"text-center mt-3\">\r\n    <a href=\"/comunicados\" class=\"btn btn-md py-2 px-5 btn-primary\">Veja mais comunicados</a>\r\n</div>"
+            value: "<div class=\"text-center mt-5\">\r\n    <a href=\"/comunicados\" class=\"btn btn-md py-2 px-5 btn-primary\">Veja mais comunicados</a>\r\n</div>"
             format: codigo
           plugin_id: text
     cache_metadata:
@@ -1019,14 +1019,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: mb-3
+          row_class: my-3
           default_row_class: true
           uses_fields: false
           col_xs: col-12
           col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
       row:
         type: 'ds_entity:node'
         options:

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.comunicado.field_comunicado_paragrafos
     - field.field.node.comunicado.field_comunicado_setor_resp
+    - field.field.node.comunicado.field_palavras_chave
     - node.type.comunicado
   module:
     - ds
@@ -39,6 +40,7 @@ third_party_settings:
         - 'dynamic_token_field:node-compartilhar'
         - field_comunicado_setor_resp
         - field_comunicado_paragrafos
+        - field_palavras_chave
     fields:
       node_title:
         plugin_id: node_title
@@ -71,6 +73,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: main
+  field_palavras_chave:
+    weight: 5
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
     region: main
   links:
     weight: 0

@@ -5,10 +5,28 @@ dependencies:
   config:
     - field.field.node.comunicado.field_comunicado_paragrafos
     - field.field.node.comunicado.field_comunicado_setor_resp
+    - field.field.node.comunicado.field_palavras_chave
     - node.type.comunicado
   module:
+    - field_group
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_palavras_chave:
+      children:
+        - field_palavras_chave
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Palavras-chave
 id: node.comunicado.default
 targetEntityType: node
 bundle: comunicado
@@ -16,7 +34,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -47,16 +65,26 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_palavras_chave:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -64,7 +92,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -77,7 +105,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.comunicado.field_comunicado_paragrafos
     - field.field.node.comunicado.field_comunicado_setor_resp
+    - field.field.node.comunicado.field_palavras_chave
     - node.type.comunicado
   module:
     - ds
@@ -68,5 +69,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_comunicado_paragrafos: true
+  field_palavras_chave: true
   langcode: true
   links: true

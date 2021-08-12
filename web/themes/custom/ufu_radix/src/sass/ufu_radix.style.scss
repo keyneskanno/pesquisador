@@ -216,6 +216,27 @@ $cyan:    #17a2b8 !default;
     margin: 30px 0;
 }
 
+.evento__field-palavras-chave,
+.comunicado__field-palavras-chave,
+.noticia__field-palavras-chave{
+    padding-top: 5px;
+    margin-top: 2rem;
+    border-top: 1px solid $gray-200;
+}
+
+.comunicado__field-palavras-chave .field__item,
+.evento__field-palavras-chave .field__item,
+.noticia__field-palavras-chave .field__item{
+    float: left;
+    padding-right: 5px;
+}
+.evento__field-palavras-chave .field__item + .field__item::before,
+.comunicado__field-palavras-chave .field__item + .field__item::before,
+.noticia__field-palavras-chave .field__item + .field__item::before{
+    content: "/ ";
+    display: inline;
+}
+
 .breadcrumb {
     margin: 20px 0;
 }

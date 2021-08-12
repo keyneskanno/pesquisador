@@ -2,6 +2,8 @@ uuid: 2d3d719e-cc00-41e2-9c88-2cc6d16cd801
 langcode: pt-br
 status: true
 dependencies:
+  module:
+    - context
   theme:
     - seven
 _core:
@@ -19,4 +21,23 @@ settings:
   label_display: '0'
   primary: true
   secondary: false
-visibility: {  }
+visibility:
+  user_status:
+    id: user_status
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  context_all:
+    id: context_all
+    values: ''
+    negate: null
+  context:
+    id: context
+    values: ''
+    negate: null
