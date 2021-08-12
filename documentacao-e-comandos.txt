@@ -1,0 +1,129 @@
+==============================================================================================
+Criar bancos de dados
+==============================================================================================
+
+CREATE DATABASE portalufu DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE USER portalufu@localhost IDENTIFIED BY 'g5R47qkZ79JKQ6Cd';
+GRANT ALL ON portalufu.* TO portalufu@localhost;
+FLUSH PRIVILEGES;
+
+==============================================================================================
+Excluir usuário e banco de dados
+==============================================================================================
+
+SHOW GRANTS FOR 'portalufu'@'localhost';
+REVOKE ALL PRIVILEGES ON 'portalufu' TO 'portalufu'@'localhost';
+DROP USER 'portalufu'@'localhost';
+DROP DATABASE portalufu;
+
+==============================================================================================
+Criar um novo projeto em Drupal 9
+==============================================================================================
+
+composer create-project drupal-composer/drupal-project:9.x-dev portalufu --no-interaction
+
+==============================================================================================
+Criar um diretório para sincronizar as configurações
+==============================================================================================
+
+cd /var/www/portalufu/
+mkdir config
+cd config/
+mkdir sync
+
+
+==============================================================================================
+Criar um childtheme Radix
+==============================================================================================
+
+drush --include="web/themes/contrib/radix" radix "ufu_radix"
+cd web/themes/custom/ufu_radix/
+npm install
+npm run watch
+#npm run dev
+#npm run prod
+
+==============================================================================================
+Cor primária do site da UFU
+==============================================================================================
+
+$primary: #3B3174;
+
+==============================================================================================
+Atualizar as traduções via drush
+==============================================================================================
+
+drush locale-check && drush locale-update && drush cr
+
+==============================================================================================
+Habilitar temas padrão via drush
+==============================================================================================
+
+drush config-set system.theme default bartik -y
+drush config-set system.theme admin seven -y
+
+==============================================================================================
+Gerar conteúdo via devel
+==============================================================================================
+
+drush genc 20 --types=nome_do_conteudo
+
+==============================================================================================
+Apagar o conteúdo via devel
+==============================================================================================
+
+drush genc 0 --types=nome_do_conteudo --kill
+
+==============================================================================================
+Reiniciar a contagem dos conteúdos
+==============================================================================================
+
+drush sql:query "ALTER TABLE node AUTO_INCREMENT=1;"
+drush sql:query "ALTER TABLE node_revision AUTO_INCREMENT=1;"
+drush sql:query "ALTER TABLE node_field_data AUTO_INCREMENT=1;"
+drush sql:query "ALTER TABLE node_field_revision AUTO_INCREMENT=1;"
+
+==============================================================================================
+Backup e Commit
+==============================================================================================
+
+drush cron && drush updb -y && drush cr && rm -rf banco* 
+sudo mysqldump portalufu > banco.sql && tar -cvzf banco-ufu$(date +%d%m%Y%H%M).tar.gz banco.sql && rm -rf banco.sql && drush cex -y && git add . 
+git commit -am 'Alteração dos links dos conteúdos e menus. Atualização do composer. Envio do banco.' 
+git push
+
+==============================================================================================
+Temas instalados
+==============================================================================================
+
+composer require 'drupal/radix:^4.10'
+composer require 'drupal/gin:^3.0@alpha'
+
+
+==============================================================================================
+Criar sub-tema do Radix
+==============================================================================================
+
+https://www.webwash.net/getting-started-with-bootstrap-4-using-radix-in-drupal/
+
+drush --include="web/themes/contrib/radix" radix "ufu_radix"
+cd web/themes/custom/ufu_radix/
+npm install
+npm run watch
+
+==============================================================================================
+Permissões de uso para servidor Genos
+==============================================================================================
+
+CREATE DATABASE drupal9 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE USER drupal9@200.19.145.59 IDENTIFIED BY 'g5R47qkZ79JKQ6Cd';
+GRANT ALL ON drupal9.* TO drupal9@200.19.145.59;
+FLUSH PRIVILEGES;
+
+#usar esse IP nas configurações avançadas 200.19.145.59
+
+
+SHOW GRANTS FOR 'dynatest'@'localhost';
+REVOKE ALL PRIVILEGES ON 'dynatest' TO 'dynatest'@'localhost';
+DROP USER 'dynatest'@'localhost';
+DROP DATABASE dynatest;
