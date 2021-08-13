@@ -10,11 +10,12 @@ dependencies:
     - field.field.node.evento.field_evento_linha_fina
     - field.field.node.evento.field_evento_paragrafos
     - field.field.node.evento.field_palavras_chave
+    - image.style.evento
     - node.type.evento
   module:
-    - colorbox
     - datetime_range
     - ds
+    - image
     - user
 third_party_settings:
   ds:
@@ -64,10 +65,10 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          link: true
           'link class': ''
           wrapper: h3
           class: ''
+          link: false
 id: node.evento.teaser
 targetEntityType: node
 bundle: evento
@@ -84,18 +85,13 @@ content:
       separator: à
     third_party_settings: {  }
   field_evento_imagem_destaque:
-    type: colorbox
+    type: image
     weight: 0
     region: main
     label: hidden
     settings:
-      colorbox_node_style: ''
-      colorbox_node_style_first: ''
-      colorbox_image_style: ''
-      colorbox_gallery: post
-      colorbox_gallery_custom: ''
-      colorbox_caption: auto
-      colorbox_caption_custom: ''
+      image_style: evento
+      image_link: ''
     third_party_settings: {  }
   field_evento_linha_fina:
     type: string

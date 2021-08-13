@@ -55,10 +55,10 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          link: true
           'link class': ''
           wrapper: h3
           class: ''
+          link: false
 id: node.noticia.lista_sem_imagem
 targetEntityType: node
 bundle: noticia
