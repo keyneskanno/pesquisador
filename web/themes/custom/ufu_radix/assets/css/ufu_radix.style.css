@@ -260,6 +260,19 @@ li.compartilhar a:hover {
   color: #fff;
 }
 
+svg.ext {
+  width: 25px !important;
+  height: 25px !important;
+  fill: #3B3174 !important;
+  margin-top: -7.5px !important;
+  padding: 0 0.2em !important;
+}
+
+svg.ext path,
+svg.mailto path {
+  stroke: #3B3174 !important;
+}
+
 @media (min-width: 1367px) and (max-width: 2560px) {
   .carousel-caption {
     top: 40%;

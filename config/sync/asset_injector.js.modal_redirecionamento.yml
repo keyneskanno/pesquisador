@@ -1,0 +1,64 @@
+uuid: be3ee089-25a8-4de0-a30b-0a23114e4826
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - context
+id: modal_redirecionamento
+label: 'Modal Redirecionamento'
+code: |-
+  var verificaDominio = function(url) {
+  	if ( url.indexOf('//') === 0 ) { url = location.protocol + url; }
+  	return url.toLowerCase().replace(/([a-z])?:\/\//,'$1').split('/')[0];
+  };
+  var eExterno = function(url) {
+  	return ( ( url.indexOf(':') > -1 || url.indexOf('//') > -1 ) && verificaDominio(location.href) !== verificaDominio(url) );
+  };
+
+  function abrir(site){
+  	window.open(site);
+  }
+  function exibirMensagem(tipo, href) {
+  	
+  	site = href;
+  	
+  	modalExterno = "<div id='modal-externo' class='modal fade' data-backdrop='static' data-keyboard=true data-focus=true tabindex='-1' role='dialog'> <div class='modal-dialog' role='document'> <div class='modal-content'> <div class='modal-header'> <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button> <h4 class='modal-title'>Aviso de redirecionamento</h4> </div> <div class='modal-body'> <p>Você está sendo redirecionado para um site externo ao domínio da UFU.<br>Deseja continuar?</p> </div> <div class='modal-footer'> <button type='button' class='btn btn-default' data-dismiss='modal' onclick='return false;'>Cancelar</button> <button type='button' class='btn btn-primary' data-dismiss='modal' onclick='window.open(site);' >Continuar</button> </div> </div> </div> </div>";
+  	modalUFU = "<div id='modal-UFU' class='modal fade' data-backdrop='static' data-keyboard=true data-focus=true tabindex='-1' role='dialog'> <div class='modal-dialog' role='document'> <div class='modal-content'> <div class='modal-header'> <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button> <h4 class='modal-title'>Aviso de redirecionamento</h4> </div> <div class='modal-body'> <p>Você está sendo redirecionado para outro site no domínio da UFU.<br>Deseja continuar?</p> </div> <div class='modal-footer'> <button type='button' class='btn btn-default' data-dismiss='modal' onclick='return false;'>Cancelar</button> <button type='button' class='btn btn-primary' data-dismiss='modal' onclick='window.open(site);' >Continuar</button> </div> </div> </div> </div>";
+  	
+  	jQuery("#modal-externo").remove();
+  	jQuery("#modal-UFU").remove();
+  	jQuery("body").append(modalUFU);
+  	jQuery("body").append(modalExterno);
+  	
+  	if (tipo == "siteExterno") {
+  		jQuery('#modal-externo').modal('show');
+  	} else if (tipo == "siteUFU") {
+  		jQuery('#modal-UFU').modal('show');
+  	} else { return false; }
+  	
+  	return false
+  }
+  jQuery("a").click(function(){
+  	if(eExterno(this.href)===true) {
+  		if (this.href.indexOf("ufu.br") > -1) { return exibirMensagem("siteUFU", this.href); }
+  		else { return exibirMensagem("siteExterno", this.href); }
+  	}
+  	
+  	return true;
+  });
+conditions_require_all: true
+conditions:
+  context_all:
+    id: context_all
+    values: ''
+    negate: null
+  context:
+    id: context
+    values: ''
+    negate: null
+contexts: {  }
+header: true
+preprocess: true
+jquery: true
+noscript: ''
+noscriptRegion: {  }

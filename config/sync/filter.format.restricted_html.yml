@@ -1,7 +1,9 @@
 uuid: b7726af6-8aae-4dbb-a493-f204485fd9b5
 langcode: pt-br
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - noreferrer
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
 name: 'HTML restrito'
@@ -30,3 +32,9 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  noreferrer:
+    id: noreferrer
+    provider: noreferrer
+    status: true
+    weight: 10
+    settings: {  }
