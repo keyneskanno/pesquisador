@@ -1,4 +1,4 @@
-uuid: 7e796855-64d1-4563-a864-222a5c137b9e
+uuid: 0ed6150a-4aae-46f3-bfd9-00c408182468
 langcode: pt-br
 status: true
 dependencies:
@@ -22,12 +22,12 @@ conditions:
     id: current_theme
     theme: ufu_radix
     negate: 0
-    uuid: 012cd3dd-2b43-4e41-a32c-9ccf7cbeab10
+    uuid: 4297020a-0336-470a-98d2-97221c689830
     context_mapping: {  }
 reactions:
   blocks:
     blocks:
-      b2dcbee3-cc04-42d1-8fd7-7e6221e3e7d9:
+      832792db-0324-44f0-a279-b3911b2b55cb:
         id: system_branding_block
         label: 'Definição de marca do site'
         provider: system
@@ -36,35 +36,9 @@ reactions:
         use_site_name: 0
         use_site_slogan: 0
         region: navbar_branding
-        weight: '0'
+        weight: '-10'
         context_mapping: {  }
         custom_id: system_branding_block
-        theme: ufu_radix
-        css_class: ''
-        unique: 0
-        context_id: sitewide
-        third_party_settings:
-          block_class:
-            classes: ''
-        uuid: b2dcbee3-cc04-42d1-8fd7-7e6221e3e7d9
-      f5dcb5a7-bb1a-4441-9c33-586a31b5394b:
-        id: 'menu_block:main'
-        label: Ensino
-        provider: menu_block
-        label_display: '0'
-        follow: 1
-        follow_parent: child
-        level: '1'
-        depth: '0'
-        expand_all_items: false
-        parent: 'main:'
-        suggestion: main
-        label_type: block
-        label_link: 0
-        region: navbar_left
-        weight: '0'
-        context_mapping: {  }
-        custom_id: menu_block_main_principal
         theme: ufu_radix
         css_class: ''
         unique: 1
@@ -72,25 +46,51 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: f5dcb5a7-bb1a-4441-9c33-586a31b5394b
-      3573b107-d9d3-4a51-b4b9-5dc3cb5a5983:
+        uuid: 832792db-0324-44f0-a279-b3911b2b55cb
+      778ee684-fd01-4803-ab0a-01d7469af704:
+        id: 'menu_block:main'
+        label: 'Navegação principal'
+        provider: menu_block
+        label_display: '0'
+        follow: 0
+        follow_parent: child
+        level: '1'
+        depth: '0'
+        expand_all_items: true
+        parent: 'main:'
+        suggestion: main
+        label_type: block
+        label_link: 0
+        region: navbar_left
+        weight: '0'
+        context_mapping: {  }
+        custom_id: menu_block_main
+        theme: ufu_radix
+        css_class: ''
+        unique: 1
+        context_id: sitewide
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 778ee684-fd01-4803-ab0a-01d7469af704
+      071035c9-f799-48b2-8362-090623d3592a:
         id: system_messages_block
         label: Mensagens
         provider: system
         label_display: '0'
         region: header
-        weight: '-2'
+        weight: '0'
         context_mapping: {  }
         custom_id: system_messages_block
         theme: ufu_radix
         css_class: ''
-        unique: 0
+        unique: 1
         context_id: sitewide
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 3573b107-d9d3-4a51-b4b9-5dc3cb5a5983
-      88c47ee3-987a-40f1-80c3-09d8662155f0:
+        uuid: 071035c9-f799-48b2-8362-090623d3592a
+      f675cfae-b305-4166-81b0-7d29298b7246:
         id: help_block
         label: Ajuda
         provider: help
@@ -101,13 +101,13 @@ reactions:
         custom_id: help_block
         theme: ufu_radix
         css_class: ''
-        unique: 0
+        unique: 1
         context_id: sitewide
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 88c47ee3-987a-40f1-80c3-09d8662155f0
-      29b3f53a-d787-4e9d-8e3d-685383749961:
+        uuid: f675cfae-b305-4166-81b0-7d29298b7246
+      9bd183b8-bea9-4248-9f92-9dd3cf58c19c:
         id: local_tasks_block
         label: Abas
         provider: core
@@ -115,18 +115,18 @@ reactions:
         primary: 1
         secondary: 1
         region: header
-        weight: '0'
+        weight: '-2'
         context_mapping: {  }
         custom_id: local_tasks_block
         theme: ufu_radix
         css_class: ''
-        unique: 0
+        unique: 1
         context_id: sitewide
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 29b3f53a-d787-4e9d-8e3d-685383749961
-      e6227c61-498b-4ec1-98d3-d1366eda2db4:
+        uuid: 9bd183b8-bea9-4248-9f92-9dd3cf58c19c
+      f4826542-ca63-48a1-8e5c-d353da24dfec:
         id: system_main_block
         label: 'Conteúdo da página principal'
         provider: system
@@ -137,13 +137,13 @@ reactions:
         custom_id: system_main_block
         theme: ufu_radix
         css_class: ''
-        unique: 0
+        unique: 1
         context_id: sitewide
         third_party_settings:
           block_class:
             classes: ''
-        uuid: e6227c61-498b-4ec1-98d3-d1366eda2db4
-      79357367-9d04-4688-9240-8727e4d476c0:
+        uuid: f4826542-ca63-48a1-8e5c-d353da24dfec
+      a16a6f69-f9e4-4a88-bbca-88d8f684bf38:
         id: 'menu_block:main'
         label: Ingresso
         provider: menu_block
@@ -158,9 +158,9 @@ reactions:
         label_type: block
         label_link: 0
         region: bottom_first
-        weight: '-5'
+        weight: '0'
         context_mapping: {  }
-        custom_id: menu_block_main_ingresso
+        custom_id: menu_block_ingresso
         theme: ufu_radix
         css_class: mb-5
         unique: 1
@@ -168,8 +168,8 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 79357367-9d04-4688-9240-8727e4d476c0
-      5ef9e9ca-867a-4f27-a9f7-b131a8041275:
+        uuid: a16a6f69-f9e4-4a88-bbca-88d8f684bf38
+      b0e99e38-82bf-40ae-9dd6-c4a5cb3c4414:
         id: 'menu_block:main'
         label: 'Pesquisa e Inovação'
         provider: menu_block
@@ -178,15 +178,15 @@ reactions:
         follow_parent: active
         level: '1'
         depth: '0'
-        expand_all_items: false
+        expand_all_items: true
         parent: 'main:menu_link_content:0eb0923d-1290-4a31-a3ae-19e371cc8e56'
         suggestion: main
         label_type: block
         label_link: 0
         region: bottom_second
-        weight: '-4'
+        weight: '0'
         context_mapping: {  }
-        custom_id: menu_block_main_pesquisa_inovacao
+        custom_id: menu_block_pesquisa_inovacao
         theme: ufu_radix
         css_class: mb-5
         unique: 1
@@ -194,8 +194,8 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 5ef9e9ca-867a-4f27-a9f7-b131a8041275
-      5f5fdf79-18c5-4726-8a3b-61c735c8350c:
+        uuid: b0e99e38-82bf-40ae-9dd6-c4a5cb3c4414
+      732c7943-9f30-4459-a468-9767e705cdf0:
         id: 'menu_block:main'
         label: Comunidade
         provider: menu_block
@@ -204,24 +204,24 @@ reactions:
         follow_parent: active
         level: '1'
         depth: '0'
-        expand_all_items: false
+        expand_all_items: true
         parent: 'main:menu_link_content:e0a9ebf3-63bf-4c71-9c63-3ffe67e78ae1'
         suggestion: main
         label_type: block
         label_link: 0
         region: bottom_third
-        weight: '-3'
+        weight: '-4'
         context_mapping: {  }
-        custom_id: menu_block_main_comunidade
+        custom_id: menu_block_comunidade
         theme: ufu_radix
         css_class: mb-5
-        unique: 1
+        unique: 0
         context_id: sitewide
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 5f5fdf79-18c5-4726-8a3b-61c735c8350c
-      b1ca4270-7ecf-4525-81d9-a2d6b27897f5:
+        uuid: 732c7943-9f30-4459-a468-9767e705cdf0
+      c3568b71-ce1b-4edf-9912-db2752879952:
         id: 'menu_block:main'
         label: 'Apoio e Inclusão'
         provider: menu_block
@@ -230,15 +230,15 @@ reactions:
         follow_parent: active
         level: '1'
         depth: '0'
-        expand_all_items: false
+        expand_all_items: true
         parent: 'main:menu_link_content:61a80c23-2ced-462c-8e58-774516a25ae1'
         suggestion: main
         label_type: block
         label_link: 0
         region: bottom_fourth
-        weight: '-6'
+        weight: '0'
         context_mapping: {  }
-        custom_id: menu_block_main
+        custom_id: menu_block_apoio_inclusao
         theme: ufu_radix
         css_class: mb-5
         unique: 1
@@ -246,8 +246,8 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: b1ca4270-7ecf-4525-81d9-a2d6b27897f5
-      3101818b-18a9-497d-8aa9-b20ebb72da46:
+        uuid: c3568b71-ce1b-4edf-9912-db2752879952
+      87224e65-4eff-4b56-a623-a9e9ffd9772b:
         id: 'menu_block:main'
         label: 'Conheça a UFU'
         provider: menu_block
@@ -256,15 +256,15 @@ reactions:
         follow_parent: active
         level: '1'
         depth: '0'
-        expand_all_items: false
+        expand_all_items: true
         parent: 'main:menu_link_content:f8a182c9-f071-4476-98ac-bfc9df6f1ca6'
         suggestion: main
         label_type: block
         label_link: 0
         region: bottom_fifth
-        weight: '-1'
+        weight: '0'
         context_mapping: {  }
-        custom_id: menu_block_main_conheca_ufu
+        custom_id: menu_block_conheca_ufu
         theme: ufu_radix
         css_class: mb-5
         unique: 1
@@ -272,8 +272,8 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 3101818b-18a9-497d-8aa9-b20ebb72da46
-      6cb5511b-d433-4d71-89f5-42325a56a421:
+        uuid: 87224e65-4eff-4b56-a623-a9e9ffd9772b
+      e53a6d7c-e713-4c26-bf8e-55fa6c1bd187:
         id: 'menu_block:main'
         label: 'Mais UFU'
         provider: menu_block
@@ -282,7 +282,7 @@ reactions:
         follow_parent: active
         level: '1'
         depth: '0'
-        expand_all_items: false
+        expand_all_items: true
         parent: 'main:menu_link_content:1ca245f4-ee5b-4cd0-b9da-c8a3a30bfa17'
         suggestion: main
         label_type: block
@@ -290,7 +290,7 @@ reactions:
         region: bottom_sixth
         weight: '0'
         context_mapping: {  }
-        custom_id: menu_block_main_fale_ufu
+        custom_id: menu_block_mais_ufu
         theme: ufu_radix
         css_class: mb-5
         unique: 1
@@ -298,8 +298,8 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 6cb5511b-d433-4d71-89f5-42325a56a421
-      11bdf88f-20ca-4152-9cb6-de87d5d76864:
+        uuid: e53a6d7c-e713-4c26-bf8e-55fa6c1bd187
+      a2c66b59-4271-414a-91ca-1392037f6f3e:
         id: 'block_content:691169f2-f126-4374-bdef-8d0cc1f63b8a'
         label: Créditos
         provider: block_content
@@ -318,9 +318,9 @@ reactions:
         third_party_settings:
           block_class:
             classes: ''
-        uuid: 11bdf88f-20ca-4152-9cb6-de87d5d76864
+        uuid: a2c66b59-4271-414a-91ca-1392037f6f3e
     id: blocks
     saved: false
-    uuid: be3184e0-f984-4437-9347-3d704206110c
+    uuid: 168b6962-7d3f-4f7b-8f82-3bd0601a52c5
     include_default_blocks: 0
 weight: 0
