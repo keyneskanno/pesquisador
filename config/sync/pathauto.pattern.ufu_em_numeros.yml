@@ -1,0 +1,22 @@
+uuid: 9a1ebd8f-48ae-46eb-a9eb-3b1fd145fabb
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: ufu_em_numeros
+label: 'UFU em números'
+type: 'canonical_entities:node'
+pattern: 'ufu-em-numeros/[node:title]'
+selection_criteria:
+  e137a3cf-762b-44ce-a819-24fc62ce5a4b:
+    id: node_type
+    bundles:
+      ufu_em_numeros: ufu_em_numeros
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e137a3cf-762b-44ce-a819-24fc62ce5a4b
+selection_logic: and
+weight: -5
+relationships: {  }

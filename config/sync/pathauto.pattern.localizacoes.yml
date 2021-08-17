@@ -1,0 +1,22 @@
+uuid: 4409072a-dfe1-4d9f-ad74-615d98debb58
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: localizacoes
+label: Localizações
+type: 'canonical_entities:node'
+pattern: 'localizacoes/[node:title]'
+selection_criteria:
+  78b78823-296a-444b-b1b3-dfc264af370a:
+    id: node_type
+    bundles:
+      localizacao: localizacao
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 78b78823-296a-444b-b1b3-dfc264af370a
+selection_logic: and
+weight: -5
+relationships: {  }

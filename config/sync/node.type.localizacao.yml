@@ -1,0 +1,17 @@
+uuid: 0e630a8b-5315-4b60-b826-b96f94170fea
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Localização
+type: localizacao
+description: 'Crie uma nova <em>Localização</em> para um Campi, Museu, Pró-reitoria e etc.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

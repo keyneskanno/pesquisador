@@ -1,0 +1,21 @@
+uuid: 4fafcabe-ace8-484f-88ca-38cb2b53acce
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localizacao_endereco
+    - node.type.localizacao
+  module:
+    - br_address_field
+id: node.localizacao.field_localizacao_endereco
+field_name: field_localizacao_endereco
+entity_type: node
+bundle: localizacao
+label: Endereço
+description: 'Caso os valores dos campos não sejam preenchidos após informar o CEP preencha-os manualmente.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: br_address_field_type

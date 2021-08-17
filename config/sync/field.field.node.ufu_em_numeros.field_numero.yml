@@ -1,0 +1,23 @@
+uuid: 4eac75a9-8b6f-49f4-af36-59412d938356
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numero
+    - node.type.ufu_em_numeros
+id: node.ufu_em_numeros.field_numero
+field_name: field_numero
+entity_type: node
+bundle: ufu_em_numeros
+label: Número
+description: 'Informe o número.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

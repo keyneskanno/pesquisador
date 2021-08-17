@@ -1,0 +1,23 @@
+uuid: ecb3e6fe-f255-406c-835f-33378d7439d3
+langcode: pt-br
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ufu_em_numeros.field_numero
+    - node.type.ufu_em_numeros
+  module:
+    - user
+id: node.ufu_em_numeros.teaser
+targetEntityType: node
+bundle: ufu_em_numeros
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_numero: true
+  langcode: true

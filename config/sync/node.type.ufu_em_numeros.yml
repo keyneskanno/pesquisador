@@ -1,0 +1,17 @@
+uuid: 9c2e80b3-139b-4c99-9cb1-ea2ef0c0c24d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'UFU em números'
+type: ufu_em_numeros
+description: 'Crie um novo <em>UFU em números</em>.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

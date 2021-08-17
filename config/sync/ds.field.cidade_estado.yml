@@ -1,0 +1,11 @@
+id: cidade_estado
+label: 'Cidade + Estado'
+ui_limit: ''
+properties:
+  content:
+    value: '[node:field_localizacao_endereco:city] - [node:field_localizacao_endereco:state]'
+    format: codigo
+type: token
+type_label: 'Token field'
+entities:
+  node: node

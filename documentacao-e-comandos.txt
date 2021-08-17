@@ -89,7 +89,7 @@ Backup e Commit
 
 drush cron && drush updb -y && drush cr && rm -rf banco* 
 sudo mysqldump portalufu > banco.sql && tar -cvzf banco-ufu$(date +%d%m%Y%H%M).tar.gz banco.sql && rm -rf banco.sql && drush cex -y && git add . 
-git commit -am 'Inslação do módulo Coffe e ajustes finos. Atualização do composer. Envio do banco.' 
+git commit -am 'Criação e configuração dos tipos de conteúdo UFU em números e Localização. Atualização do composer. Envio do banco.' 
 git push
 
 ==============================================================================================

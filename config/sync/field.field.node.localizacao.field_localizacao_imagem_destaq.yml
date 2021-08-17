@@ -1,0 +1,38 @@
+uuid: 5ed90857-8a68-444e-96da-8ed7a5a60ab1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localizacao_imagem_destaq
+    - node.type.localizacao
+  module:
+    - image
+id: node.localizacao.field_localizacao_imagem_destaq
+field_name: field_localizacao_imagem_destaq
+entity_type: node
+bundle: localizacao
+label: 'Imagem de destaque'
+description: 'As imagens deverão possuir aspecto 16:9, caso o contrário ela pode ser cortada.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'imagem-destaque/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

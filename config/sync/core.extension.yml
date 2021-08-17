@@ -7,6 +7,7 @@ module:
   block_class: 0
   block_content: 0
   bootstrap_layouts: 0
+  br_address_field: 0
   breakpoint: 0
   ckeditor: 0
   coffee: 0
@@ -55,6 +56,7 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  simple_gmap: 0
   svg_image_field: 0
   system: 0
   taxonomy: 0

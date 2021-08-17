@@ -1,0 +1,18 @@
+uuid: 75b06142-853a-4f08-b9f3-5925deba9250
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.ufu_em_numeros
+id: node.ufu_em_numeros.title
+field_name: title
+entity_type: node
+bundle: ufu_em_numeros
+label: 'Texto do número'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -303,6 +303,16 @@ svg.mailto path {
     display: none;
 }
 
+.ufu-em-numeros__field-numero {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.node--type-localizacao .bs-region--top {
+    margin-bottom: 30px;
+}
+
 @media (min-width: 1367px) and (max-width: 2560px) {
     .carousel-caption{
         top: 40%;

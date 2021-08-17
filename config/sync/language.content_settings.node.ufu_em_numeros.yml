@@ -1,0 +1,11 @@
+uuid: 9fb95855-af95-4251-9e48-c88e8dbdafc5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.ufu_em_numeros
+id: node.ufu_em_numeros
+target_entity_type_id: node
+target_bundle: ufu_em_numeros
+default_langcode: site_default
+language_alterable: false

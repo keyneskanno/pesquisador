@@ -1,0 +1,19 @@
+uuid: 4e52fea9-e9a1-4dd8-adb1-72dd83b71e10
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localizacao_coordenadas
+    - node.type.localizacao
+id: node.localizacao.field_localizacao_coordenadas
+field_name: field_localizacao_coordenadas
+entity_type: node
+bundle: localizacao
+label: Coordenadas
+description: 'Informe as Coordenadas para exibição da Localização no Google Maps.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

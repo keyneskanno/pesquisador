@@ -6,7 +6,9 @@ dependencies:
     - views.view.acesso_rapido
     - views.view.comunicados
     - views.view.eventos
+    - views.view.localizacoes
     - views.view.noticias
+    - views.view.ufu_em_numeros
   module:
     - system
     - views
@@ -165,6 +167,44 @@ reactions:
           block_class:
             classes: ''
         uuid: e2988e61-867f-4230-a758-9b4557f364e6
+      0b333b73-b1c6-40a0-a771-3069149bcc41:
+        id: 'views_block:ufu_em_numeros-bloco_ufu_em_numeros'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: sixth_area
+        weight: '-3'
+        context_mapping: {  }
+        custom_id: views_block_ufu_em_numeros_bloco_ufu_em_numeros
+        theme: ufu_radix
+        css_class: ''
+        unique: 1
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 0b333b73-b1c6-40a0-a771-3069149bcc41
+      b39aadb0-6b50-44fe-beb9-b99ebd6bafa9:
+        id: 'views_block:localizacoes-bloco_onde_estamos'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: seventh_area
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_localizacoes_bloco_onde_estamos
+        theme: ufu_radix
+        css_class: mb-5
+        unique: 1
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: b39aadb0-6b50-44fe-beb9-b99ebd6bafa9
     id: blocks
     saved: false
     uuid: c10a35e9-0765-47ee-9b7e-458362f95063

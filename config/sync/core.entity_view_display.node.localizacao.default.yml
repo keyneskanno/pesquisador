@@ -1,0 +1,125 @@
+uuid: 7b4dcef3-e79d-407a-af49-3da63dfbfdc2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.localizacao.field_localizacao_coordenadas
+    - field.field.node.localizacao.field_localizacao_endereco
+    - field.field.node.localizacao.field_localizacao_imagem_destaq
+    - image.style.full_hd
+    - node.type.localizacao
+  module:
+    - br_address_field
+    - ds
+    - image
+    - simple_gmap
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      top:
+        - links
+        - node_title
+        - field_localizacao_imagem_destaq
+      left:
+        - field_localizacao_coordenadas
+      right:
+        - field_localizacao_endereco
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h1
+          class: mb-3
+          link: false
+id: node.localizacao.default
+targetEntityType: node
+bundle: localizacao
+mode: default
+content:
+  field_localizacao_coordenadas:
+    weight: 3
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '200'
+      iframe_title: ''
+      static_scale: 1
+      link_text: 'Visualizar o mapa ampliado'
+      zoom_level: 14
+      map_type: m
+      langcode: pt-br
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: left
+  field_localizacao_endereco:
+    weight: 4
+    label: hidden
+    settings:
+      display_state: ''
+    third_party_settings: {  }
+    type: br_address_plain_formatter
+    region: right
+  field_localizacao_imagem_destaq:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: full_hd
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: top
+  links:
+    weight: 0
+    region: top
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

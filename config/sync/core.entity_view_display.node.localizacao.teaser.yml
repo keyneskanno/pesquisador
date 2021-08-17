@@ -1,0 +1,77 @@
+uuid: 537764c0-7016-433d-a808-db52ab12d08b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.localizacao.field_localizacao_coordenadas
+    - field.field.node.localizacao.field_localizacao_endereco
+    - field.field.node.localizacao.field_localizacao_imagem_destaq
+    - image.style.full_hd_3_colunas
+    - node.type.localizacao
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_localizacao_imagem_destaq
+        - node_title
+        - 'dynamic_token_field:node-cidade_estado'
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h3
+          class: my-3
+          link: false
+      'dynamic_token_field:node-cidade_estado':
+        plugin_id: 'dynamic_token_field:node-cidade_estado'
+        weight: 2
+        label: hidden
+        formatter: default
+id: node.localizacao.teaser
+targetEntityType: node
+bundle: localizacao
+mode: teaser
+content:
+  field_localizacao_imagem_destaq:
+    type: image
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      image_style: full_hd_3_colunas
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_localizacao_coordenadas: true
+  field_localizacao_endereco: true
+  langcode: true
+  links: true
