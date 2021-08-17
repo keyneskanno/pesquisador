@@ -1,13 +1,13 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css);@charset "UTF-8";
 /* Works on Firefox */
 * {
-  scrollbar-width: thin;
+  scrollbar-width: auto;
   scrollbar-color: #3B3174 #fff;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 17px;
 }
 
 *::-webkit-scrollbar-track {
@@ -16,8 +16,6 @@
 
 *::-webkit-scrollbar-thumb {
   background-color: #3B3174;
-  border-radius: 20px;
-  border: 2px solid #fff;
 }
 
 a:hover,
@@ -100,7 +98,7 @@ a:focus {
 }
 
 .carousel-item img {
-  min-width: calc(100vw - 12px);
+  min-width: calc(100vw - 17px);
   max-height: calc(100vh - 60px);
 }
 
@@ -271,6 +269,11 @@ svg.ext {
 svg.ext path,
 svg.mailto path {
   stroke: #3B3174 !important;
+}
+
+.compartilhar svg.ext,
+.compartilhar svg.mailto {
+  display: none;
 }
 
 @media (min-width: 1367px) and (max-width: 2560px) {
