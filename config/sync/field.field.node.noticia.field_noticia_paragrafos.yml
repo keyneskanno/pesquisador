@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.galeria
     - paragraphs.paragraphs_type.imagem
     - paragraphs.paragraphs_type.imagem_e_texto
+    - paragraphs.paragraphs_type.incorporar_codigo
     - paragraphs.paragraphs_type.texto
     - paragraphs.paragraphs_type.texto_duas_colunas
     - paragraphs.paragraphs_type.texto_e_imagem
@@ -36,31 +37,35 @@ settings:
       texto_duas_colunas: texto_duas_colunas
       imagem_e_texto: imagem_e_texto
       texto_e_imagem: texto_e_imagem
-      arquivos: arquivos
       video: video
+      arquivos: arquivos
+      incorporar_codigo: incorporar_codigo
     target_bundles_drag_drop:
       arquivos:
         enabled: true
-        weight: -11
+        weight: -12
       galeria:
         enabled: true
-        weight: -16
+        weight: -18
       imagem:
         enabled: true
-        weight: -15
+        weight: -17
       imagem_e_texto:
         enabled: true
-        weight: -13
+        weight: -15
+      incorporar_codigo:
+        enabled: true
+        weight: -11
       texto:
         enabled: true
-        weight: -17
+        weight: -19
       texto_duas_colunas:
         enabled: true
-        weight: -14
+        weight: -16
       texto_e_imagem:
         enabled: true
-        weight: -12
+        weight: -14
       video:
         enabled: true
-        weight: -10
+        weight: -13
 field_type: entity_reference_revisions

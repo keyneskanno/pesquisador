@@ -1,0 +1,23 @@
+uuid: fcb1aa9e-1d17-4d79-adc1-7866dcb4620d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.incorporar_codigo.field_paragrafo_codigo
+    - paragraphs.paragraphs_type.incorporar_codigo
+id: paragraph.incorporar_codigo.default
+targetEntityType: paragraph
+bundle: incorporar_codigo
+mode: default
+content:
+  field_paragrafo_codigo:
+    weight: 0
+    settings:
+      rows: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

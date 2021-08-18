@@ -69,9 +69,9 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: mb-3
+          grouping: {  }
+          row_class: mb-5
           default_row_class: true
-          uses_fields: false
           col_xs: col-12
           col_sm: col-sm-12
           col_md: col-md-4
@@ -260,9 +260,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.acesso_rapido.default'
         - 'config:core.entity_view_display.node.localizacao.default'
         - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
         - 'config:core.entity_view_display.node.acesso_rapido.teaser'
         - 'config:core.entity_view_display.node.comunicado.default'
         - 'config:core.entity_view_display.node.comunicado.teaser'
@@ -320,7 +320,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"text-center mt-5\">\r\n    <a href=\"/localizacoes\" class=\"btn btn-md py-2 px-5 btn-primary\">Veja mais locais da UFU</a>\r\n</div>"
+            value: "<div class=\"text-center\">\r\n    <a href=\"/localizacoes\" class=\"btn btn-md py-2 px-5 btn-primary\">Veja mais locais da UFU</a>\r\n</div>"
             format: codigo
           plugin_id: text
       sorts:

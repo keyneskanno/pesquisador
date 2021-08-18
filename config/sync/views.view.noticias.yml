@@ -407,15 +407,19 @@ display:
       tags:
         - 'config:core.entity_view_display.node.acesso_rapido.teaser'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.acesso_rapido.default'
         - 'config:core.entity_view_display.node.comunicado.default'
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
-        - 'config:core.entity_view_display.node.noticia.default'
-        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
   bloco_noticia_sazonal:
     display_plugin: block
     id: bloco_noticia_sazonal
@@ -645,11 +649,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   bloco_noticias_destaque:
     display_plugin: block
     id: bloco_noticias_destaque
@@ -1245,9 +1253,9 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          grouping: {  }
+          row_class: mb-5
           default_row_class: true
-          uses_fields: false
           col_xs: col-12
           col_sm: col-sm-12
           col_md: col-md-4
@@ -1379,11 +1387,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_noticias_ano:
     display_plugin: page
     id: pagina_noticias_ano
@@ -1687,11 +1699,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_noticias_ano_mes:
     display_plugin: page
     id: pagina_noticias_ano_mes
@@ -2029,11 +2045,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_todas_noticias:
     display_plugin: page
     id: pagina_todas_noticias
@@ -2301,8 +2321,12 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'

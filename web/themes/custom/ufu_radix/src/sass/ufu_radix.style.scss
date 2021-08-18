@@ -130,7 +130,6 @@ a:focus {
     max-height: calc(100vh - 60px);
 }
 
-.grid .comunicado__node-changed-date,
 .grid .noticia__linha-fina,
 .grid .evento__linha-fina {
     font-size: 1em;
@@ -203,6 +202,7 @@ a:focus {
     margin-bottom: 20px;
 }
 
+.paragraph--type-incorporar-codigo,
 .paragraph--type-imagem-e-texto,
 .paragraph--type-texto-e-imagem,
 .paragraph--type--imagem,

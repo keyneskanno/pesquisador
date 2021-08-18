@@ -1,0 +1,71 @@
+uuid: 762fa1c9-2b87-439f-9f48-12f5d87455da
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.incorporar_codigo.field_paragrafo_codigo
+    - paragraphs.paragraphs_type.incorporar_codigo
+  module:
+    - advanced_text_formatter
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_paragrafo_codigo
+id: paragraph.incorporar_codigo.default
+targetEntityType: paragraph
+bundle: incorporar_codigo
+mode: default
+content:
+  field_paragrafo_codigo:
+    type: advanced_text
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      trim_length: '0'
+      ellipsis: '1'
+      word_boundary: '1'
+      filter: drupal
+      format: codigo
+      allowed_html:
+        - a
+        - b
+        - br
+        - dd
+        - dl
+        - dt
+        - em
+        - i
+        - li
+        - ol
+        - p
+        - strong
+        - u
+        - ul
+      use_summary: 0
+      token_replace: 0
+      autop: 0
+    third_party_settings: {  }
+hidden: {  }

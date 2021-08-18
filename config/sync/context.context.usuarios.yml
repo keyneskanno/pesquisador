@@ -26,29 +26,12 @@ conditions:
 reactions:
   blocks:
     blocks:
-      86e15eaf-6d3a-4ea0-a186-2f06382203c6:
-        id: system_main_block
-        label: 'Conteúdo da página principal'
-        provider: system
-        label_display: '0'
-        region: content
-        weight: '1'
-        context_mapping: {  }
-        custom_id: system_main_block
-        theme: ufu_radix
-        css_class: ''
-        unique: 0
-        context_id: usuarios
-        third_party_settings:
-          block_class:
-            classes: ''
-        uuid: 86e15eaf-6d3a-4ea0-a186-2f06382203c6
       7be5be5a-6aaf-4618-8e4e-1026e08f69cd:
         id: page_title_block
         label: 'Título da página'
         provider: core
         label_display: '0'
-        region: content
+        region: header
         weight: '0'
         context_mapping: {  }
         custom_id: page_title_block

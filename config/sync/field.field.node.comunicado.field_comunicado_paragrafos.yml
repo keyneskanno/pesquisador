@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.galeria
     - paragraphs.paragraphs_type.imagem
     - paragraphs.paragraphs_type.imagem_e_texto
+    - paragraphs.paragraphs_type.incorporar_codigo
     - paragraphs.paragraphs_type.texto
     - paragraphs.paragraphs_type.texto_duas_colunas
     - paragraphs.paragraphs_type.texto_e_imagem
@@ -38,6 +39,7 @@ settings:
       texto_e_imagem: texto_e_imagem
       video: video
       arquivos: arquivos
+      incorporar_codigo: incorporar_codigo
     target_bundles_drag_drop:
       arquivos:
         enabled: true
@@ -51,6 +53,9 @@ settings:
       imagem_e_texto:
         enabled: true
         weight: -14
+      incorporar_codigo:
+        enabled: true
+        weight: 14
       texto:
         enabled: true
         weight: -17

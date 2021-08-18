@@ -65,7 +65,7 @@ reactions:
         context_mapping: {  }
         custom_id: views_block_noticias_bloco_noticias_recentes
         theme: ufu_radix
-        css_class: mb-5
+        css_class: ''
         unique: 0
         context_id: inicio
         third_party_settings:
