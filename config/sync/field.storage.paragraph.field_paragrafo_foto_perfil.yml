@@ -1,0 +1,30 @@
+uuid: a96d1d0d-2d0e-41b7-84ec-8eb0bde786a2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_paragrafo_foto_perfil
+field_name: field_paragrafo_foto_perfil
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

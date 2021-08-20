@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_evento_paragrafos
     - node.type.evento
     - paragraphs.paragraphs_type.arquivos
+    - paragraphs.paragraphs_type.foto_perfil_texto
     - paragraphs.paragraphs_type.galeria
     - paragraphs.paragraphs_type.imagem
     - paragraphs.paragraphs_type.imagem_e_texto
@@ -32,10 +33,11 @@ settings:
     negate: 0
     target_bundles:
       texto: texto
-      galeria: galeria
-      imagem: imagem
-      imagem_e_texto: imagem_e_texto
       texto_duas_colunas: texto_duas_colunas
+      imagem: imagem
+      galeria: galeria
+      foto_perfil_texto: foto_perfil_texto
+      imagem_e_texto: imagem_e_texto
       texto_e_imagem: texto_e_imagem
       video: video
       arquivos: arquivos
@@ -43,29 +45,32 @@ settings:
     target_bundles_drag_drop:
       arquivos:
         enabled: true
-        weight: -12
+        weight: -13
+      foto_perfil_texto:
+        enabled: true
+        weight: -17
       galeria:
         enabled: true
         weight: -18
       imagem:
         enabled: true
-        weight: -17
+        weight: -19
       imagem_e_texto:
         enabled: true
         weight: -16
       incorporar_codigo:
         enabled: true
-        weight: -11
+        weight: -12
       texto:
         enabled: true
-        weight: -19
+        weight: -21
       texto_duas_colunas:
         enabled: true
-        weight: -15
+        weight: -20
       texto_e_imagem:
         enabled: true
-        weight: -14
+        weight: -15
       video:
         enabled: true
-        weight: -13
+        weight: -14
 field_type: entity_reference_revisions

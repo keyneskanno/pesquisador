@@ -1,0 +1,36 @@
+uuid: a55cabc5-e700-4c7c-854d-feaf93719893
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foto_perfil_texto.field_paragrafo_foto_perfil
+    - field.field.paragraph.foto_perfil_texto.field_paragrafo_texto
+    - image.style.evento_miniatura
+    - paragraphs.paragraphs_type.foto_perfil_texto
+  module:
+    - image
+    - text
+id: paragraph.foto_perfil_texto.default
+targetEntityType: paragraph
+bundle: foto_perfil_texto
+mode: default
+content:
+  field_paragrafo_foto_perfil:
+    weight: 0
+    settings:
+      preview_image_style: evento_miniatura
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_paragrafo_texto:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

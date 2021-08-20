@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="email-ufu" x="0" y="0" width="512" height="512" style="fill:none;"/>
+    <g id="email-ufu1" serif:id="email-ufu">
+        <g transform="matrix(2.6,0,0,2.6,98.7,103.9)">
+            <path d="M60.507,0.476L120.5,45.277L120.5,116.524L0.5,116.524L0.5,45.277L60.507,0.476ZM52.729,21.183L52.729,46.011L54.406,47.688L63.645,47.688L65.338,45.995L65.338,31.816L68.224,28.931L76.019,28.931L68.24,21.183L52.729,21.183ZM48.714,25.198L41.75,32.161L41.75,47.72L52.697,58.683L57.544,58.683L68.773,47.454L68.773,33.259L69.871,32.161L79.25,32.161L77.618,30.561L69.071,30.561L67.08,32.569L67.08,46.591L61.935,51.735L52.729,51.735L48.714,47.72L48.714,25.198ZM70.687,33.776L70.389,34.075L70.389,48.111L59.834,58.667L59.85,58.683L68.208,58.683L79.187,47.688L79.187,33.776L70.687,33.776ZM4.73,46.69L4.73,110.65L49.004,76.383L4.73,46.69ZM116.267,46.69L72.001,76.383L116.265,110.65L116.267,110.65L116.267,46.69ZM60.507,72.366L8.094,112.929L112.905,112.929L60.507,72.366Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
