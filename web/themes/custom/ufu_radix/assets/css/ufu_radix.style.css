@@ -2,7 +2,7 @@
 /* Works on Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #3B3174 #fff;
+  scrollbar-color: #3B3174 #ced4da;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -11,7 +11,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #fff;
+  background: #ced4da;
 }
 
 *::-webkit-scrollbar-thumb {

@@ -30,7 +30,7 @@ $cyan:    #17a2b8 !default;
 /* Works on Firefox */
 * {
     scrollbar-width: auto;
-    scrollbar-color: $primary $white;
+    scrollbar-color: $primary $gray-400;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -39,7 +39,7 @@ $cyan:    #17a2b8 !default;
 }
 
 *::-webkit-scrollbar-track {
-    background: $white;
+    background: $gray-400;
 }
 
 *::-webkit-scrollbar-thumb {
