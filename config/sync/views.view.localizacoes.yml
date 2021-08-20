@@ -215,22 +215,7 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: ASC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
+      sorts: {  }
       title: Localizações
       header:
         area:
@@ -372,6 +357,7 @@ display:
         pager: false
         filters: false
         filter_groups: false
+        sorts: false
       display_description: ''
       pager:
         type: full
@@ -467,6 +453,21 @@ display:
         operator: AND
         groups:
           1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:

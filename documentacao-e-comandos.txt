@@ -89,7 +89,7 @@ Backup e Commit
 
 drush cron && drush updb -y && drush cr && rm -rf banco* 
 sudo mysqldump portalufu > banco.sql && tar -cvzf banco-ufu$(date +%d%m%Y%H%M).tar.gz banco.sql && rm -rf banco.sql && drush cex -y && git add . 
-git commit -am 'Atualizações de CSS. Atualização do composer. Envio do banco.' 
+git commit -am 'Atualizações nas views de comunicados. Atualização do composer. Envio do banco.' 
 git push
 
 ==============================================================================================
@@ -121,9 +121,3 @@ GRANT ALL ON drupal9.* TO drupal9@200.19.145.59;
 FLUSH PRIVILEGES;
 
 #usar esse IP nas configurações avançadas 200.19.145.59
-
-
-SHOW GRANTS FOR 'dynatest'@'localhost';
-REVOKE ALL PRIVILEGES ON 'dynatest' TO 'dynatest'@'localhost';
-DROP USER 'dynatest'@'localhost';
-DROP DATABASE dynatest;

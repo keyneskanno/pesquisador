@@ -255,21 +255,25 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.node.evento.default'
-        - 'config:core.entity_view_display.node.evento.teaser'
         - 'config:core.entity_view_display.node.acesso_rapido.default'
         - 'config:core.entity_view_display.node.acesso_rapido.teaser'
         - 'config:core.entity_view_display.node.comunicado.default'
         - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   bloco_eventos:
     display_plugin: block
     id: bloco_eventos
     display_title: 'Bloco - Eventos'
-    position: 2
+    position: 4
     display_options:
       display_extenders: {  }
       pager:
@@ -323,16 +327,20 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_evento_ano:
     display_plugin: page
     id: pagina_evento_ano
     display_title: 'Página - Eventos: Ano'
-    position: 1
+    position: 2
     display_options:
       display_extenders: {  }
       path: eventos/%
@@ -376,7 +384,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Título
+            label: 'Título do evento'
             description: ''
             use_operator: false
             operator: title_op
@@ -480,11 +488,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_eventos:
     display_plugin: page
     id: pagina_eventos
@@ -533,7 +545,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Título
+            label: 'Título do evento'
             description: ''
             use_operator: false
             operator: title_op
@@ -600,16 +612,20 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_eventos_ano_mes:
     display_plugin: page
     id: pagina_eventos_ano_mes
     display_title: 'Página - Eventos: Mês'
-    position: 1
+    position: 3
     display_options:
       display_extenders: {  }
       path: eventos/%/%
@@ -653,7 +669,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Título
+            label: 'Título do evento'
             description: ''
             use_operator: false
             operator: title_op
@@ -790,8 +806,12 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'

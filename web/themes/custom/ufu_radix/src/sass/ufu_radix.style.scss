@@ -26,26 +26,6 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-
-/* Works on Firefox */
-* {
-    scrollbar-width: auto;
-    scrollbar-color: $primary $gray-400;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 17px;
-}
-
-*::-webkit-scrollbar-track {
-    background: $gray-400;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: $primary;
-}
-
 a:hover,
 a:focus {
     text-decoration: none !important;

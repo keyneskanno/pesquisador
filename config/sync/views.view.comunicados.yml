@@ -270,11 +270,15 @@ display:
         - 'config:core.entity_view_display.node.acesso_rapido.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   bloco_noticias_recentes:
     display_plugin: block
     id: bloco_noticias_recentes
@@ -419,11 +423,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_comunicados_ano:
     display_plugin: page
     id: pagina_comunicados_ano
@@ -513,7 +521,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: 'Título da notícia'
+            label: 'Título do comunicado'
             description: ''
             use_operator: false
             operator: title_op
@@ -621,14 +629,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
+          grouping: {  }
           row_class: mb-3
           default_row_class: true
-          uses_fields: false
           col_xs: col-12
           col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
       row:
         type: fields
         options:
@@ -651,11 +659,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_comunicados_ano_mes:
     display_plugin: page
     id: pagina_comunicados_ano_mes
@@ -745,7 +757,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: 'Título da notícia'
+            label: 'Título do comunicado'
             description: ''
             use_operator: false
             operator: title_op
@@ -887,14 +899,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
+          grouping: {  }
           row_class: mb-3
           default_row_class: true
-          uses_fields: false
           col_xs: col-12
           col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_md: col-md-12
+          col_lg: col-lg-12
+          col_xl: col-xl-12
       row:
         type: fields
         options:
@@ -917,11 +929,15 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
   pagina_todos_comunicados:
     display_plugin: page
     id: pagina_todos_comunicados
@@ -1010,7 +1026,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: 'Título da notícia'
+            label: 'Título do comunicado'
             description: ''
             use_operator: false
             operator: title_op
@@ -1113,8 +1129,12 @@ display:
         - 'config:core.entity_view_display.node.comunicado.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
         - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
         - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
