@@ -11,6 +11,7 @@ regions:
   navbar_left:  Navbar left
   navbar_right: Navbar right
   featured: Featured
+  featured_mobile: Featured mobile
   header: Header
   aside: Left aside
   content: Content

@@ -264,14 +264,14 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
         - 'config:core.entity_view_display.node.comunicado.default'
         - 'config:core.entity_view_display.node.comunicado.teaser'
-        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.acesso_rapido.teaser'
         - 'config:core.entity_view_display.node.evento.default'
         - 'config:core.entity_view_display.node.evento.teaser'
-        - 'config:core.entity_view_display.node.localizacao.default'
-        - 'config:core.entity_view_display.node.localizacao.teaser'
         - 'config:core.entity_view_display.node.noticia.default'
         - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
         - 'config:core.entity_view_display.node.noticia.lista_horizontal'
@@ -407,7 +407,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"text-center mt-5\">\r\n    <a href=\"/comunicados\" class=\"btn btn-md py-2 px-5 btn-primary\">Veja mais comunicados</a>\r\n</div>"
+            value: "<div class=\"text-center mt-5\">\r\n    <a href=\"/comunicados\" class=\"btn btn-md py-2 px-5 btn-outline-primary\">Veja mais comunicados</a>\r\n</div>"
             format: codigo
           plugin_id: text
     cache_metadata:

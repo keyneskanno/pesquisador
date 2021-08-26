@@ -36,9 +36,19 @@
   <main class="pt-0">
 
     {% if page.featured %}
-      <div class="page__featured container-fluid">
+      <div class="page__featured container-fluid d-none d-md-block">
         <div class="row">
           {{ page.featured }}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.featured_mobile %}
+      <div class="featured__mobile container-fluid bg-primary-90 d-md-none">
+        <div class="row no-gutters">
+          <div class="container py-5">
+            {{ page.featured_mobile }}
+          </div>
         </div>
       </div>
     {% endif %}

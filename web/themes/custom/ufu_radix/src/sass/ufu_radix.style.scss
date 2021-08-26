@@ -26,6 +26,11 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+
+.bg-primary-90{
+    background: $primary-90;
+}
+
 a:hover,
 a:focus {
     text-decoration: none !important;
@@ -294,6 +299,22 @@ svg.mailto path {
     margin-bottom: 30px;
 }
 
+
+.featured__mobile .noticia__chapeu,
+.featured__mobile .noticia__linha-fina,
+.featured__mobile a {
+    color: $white;
+}
+
+.featured__mobile .noticia__chapeu:hover,
+.featured__mobile .noticia__chapeu:focus,
+.featured__mobile .noticia__linha-fina:hover,
+.featured__mobile .noticia__linha-fina:focus,
+.featured__mobile a:hover, 
+.featured__mobile a:focus {
+    color: $gray-200;
+}
+
 @media (min-width: 1367px) and (max-width: 2560px) {
     .carousel-caption{
         top: 40%;
@@ -307,7 +328,7 @@ svg.mailto path {
 }
 
 @media screen and (max-width: 640px) {
-    .carousel-caption.d-none.d-md-block {
+    /* .carousel-caption.d-none.d-md-block {
         display: block !important;
         top: -25px;
     }
@@ -327,7 +348,7 @@ svg.mailto path {
 
     .carousel-indicators {
         display: none !important;
-    }
+    } */
 
     ul.compartilhar {
         text-align: center;
@@ -348,14 +369,12 @@ svg.mailto path {
     a.dropdown-item {
         white-space: normal;
     }
-    
-
 }
 
 @media screen and (max-width: 320px) {
-    .carousel-item img {
+    /* .carousel-item img {
         min-height: 50vh !important;
-    }
+    } */
 
     .paragraph--type--galeria .galeria__field-paragrafo-imagens {
         grid-template-columns: auto auto auto;

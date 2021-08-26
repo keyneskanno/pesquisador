@@ -205,6 +205,25 @@ reactions:
           block_class:
             classes: ''
         uuid: b39aadb0-6b50-44fe-beb9-b99ebd6bafa9
+      6f01c485-c1d1-40f6-bda2-a2b339c8de56:
+        id: 'views_block:noticias-bloco_noticias_recentes_mobile'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: none
+        region: featured_mobile
+        weight: '0'
+        context_mapping: {  }
+        custom_id: views_block_noticias_bloco_noticias_recentes_mobile
+        theme: ufu_radix
+        css_class: ''
+        unique: 1
+        context_id: inicio
+        third_party_settings:
+          block_class:
+            classes: ''
+        uuid: 6f01c485-c1d1-40f6-bda2-a2b339c8de56
     id: blocks
     saved: false
     uuid: c10a35e9-0765-47ee-9b7e-458362f95063

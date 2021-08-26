@@ -326,7 +326,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"text-center mt-3\">\r\n    <a href=\"/acesso-rapido\" class=\"btn btn-md py-2 px-5 btn-primary\">Veja mais acessos rápidos</a>\r\n</div>"
+            value: "<div class=\"text-center mt-3\">\r\n    <a href=\"/acesso-rapido\" class=\"btn btn-md py-2 px-5 btn-outline-primary\">Veja mais acessos rápidos</a>\r\n</div>"
             format: codigo
           plugin_id: text
       header:
