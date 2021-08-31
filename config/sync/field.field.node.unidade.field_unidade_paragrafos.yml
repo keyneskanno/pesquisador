@@ -1,10 +1,10 @@
-uuid: 9228be86-f597-4d1f-813c-94dda34de3de
+uuid: 8fdd4b10-0ea4-4769-95f6-f409c0df9ede
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.storage.node.field_comunicado_paragrafos
-    - node.type.comunicado
+    - field.storage.node.field_unidade_paragrafos
+    - node.type.unidade
     - paragraphs.paragraphs_type.abas
     - paragraphs.paragraphs_type.acordeao
     - paragraphs.paragraphs_type.arquivos
@@ -20,10 +20,10 @@ dependencies:
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
-id: node.comunicado.field_comunicado_paragrafos
-field_name: field_comunicado_paragrafos
+id: node.unidade.field_unidade_paragrafos
+field_name: field_unidade_paragrafos
 entity_type: node
-bundle: comunicado
+bundle: unidade
 label: Parágrafos
 description: ''
 required: false
@@ -38,8 +38,8 @@ settings:
       texto: texto
       texto_duas_colunas: texto_duas_colunas
       imagem: imagem
-      galeria: galeria
       foto_perfil_texto: foto_perfil_texto
+      galeria: galeria
       imagem_e_texto: imagem_e_texto
       texto_e_imagem: texto_e_imagem
       abas: abas
@@ -60,10 +60,10 @@ settings:
         weight: -16
       foto_perfil_texto:
         enabled: true
-        weight: -23
+        weight: -24
       galeria:
         enabled: true
-        weight: -24
+        weight: -23
       imagem:
         enabled: true
         weight: -25

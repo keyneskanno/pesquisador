@@ -1,0 +1,23 @@
+uuid: 0beae3e4-f58c-40c4-a600-f8721be52e3b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mapa.field_mapa_coordenadas
+    - paragraphs.paragraphs_type.mapa
+id: paragraph.mapa.default
+targetEntityType: paragraph
+bundle: mapa
+mode: default
+content:
+  field_mapa_coordenadas:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

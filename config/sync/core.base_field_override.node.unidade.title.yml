@@ -1,0 +1,18 @@
+uuid: 8b374233-2370-438f-8a27-5139dbd50636
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.unidade
+id: node.unidade.title
+field_name: title
+entity_type: node
+bundle: unidade
+label: 'Nome da Unidade'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

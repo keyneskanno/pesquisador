@@ -8,6 +8,7 @@ dependencies:
   module:
     - advanced_text_formatter
     - ds
+    - field_group
 third_party_settings:
   ds:
     layout:
@@ -32,7 +33,28 @@ third_party_settings:
             attributes: ''
     regions:
       main:
+        - group_centralizar
         - field_paragrafo_codigo
+  field_group:
+    group_centralizar:
+      children:
+        - field_paragrafo_codigo
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: main
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        element: center
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Centralizar
 id: paragraph.incorporar_codigo.default
 targetEntityType: paragraph
 bundle: incorporar_codigo
@@ -40,7 +62,7 @@ mode: default
 content:
   field_paragrafo_codigo:
     type: advanced_text
-    weight: 0
+    weight: 1
     region: main
     label: hidden
     settings:

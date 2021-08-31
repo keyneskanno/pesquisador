@@ -28,9 +28,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrar
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: Reiniciar
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -246,7 +246,7 @@ display:
           table: users_field_data
           field: name
           relationship: uid
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false
@@ -277,7 +277,7 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
+            format_custom_true: Publicar
             format_custom_false: Unpublished
           plugin_id: field
           entity_type: node
@@ -478,7 +478,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publicar
                 operator: '='
                 value: '1'
               2:

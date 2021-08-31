@@ -1,0 +1,21 @@
+uuid: 93837170-4f12-4c84-a17f-21eb734b56a5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_abas
+    - paragraphs.paragraphs_type.abas
+  module:
+    - bootstrap_horizontal_tabs
+id: paragraph.abas.field_abas
+field_name: field_abas
+entity_type: paragraph
+bundle: abas
+label: Abas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: bootstrap_horizontal_tabs

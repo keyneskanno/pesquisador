@@ -1,0 +1,29 @@
+uuid: 171cd9fa-f1d8-4fc4-a222-ebc1dd8e7b5e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_palavras_chave
+    - node.type.unidade
+    - taxonomy.vocabulary.tags
+id: node.unidade.field_palavras_chave
+field_name: field_palavras_chave
+entity_type: node
+bundle: unidade
+label: Palavras-chave
+description: 'Insira palavras-chave que referenciem o conteúdo. Essas palavras serão usadas para facilitar a busca.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

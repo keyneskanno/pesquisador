@@ -1,0 +1,100 @@
+uuid: 843e078d-ee5e-4090-a741-8d8721464e18
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.unidade.field_palavras_chave
+    - field.field.node.unidade.field_unidade_ordenacao
+    - field.field.node.unidade.field_unidade_paragrafos
+    - field.field.node.unidade.field_unidade_tipo
+    - node.type.unidade
+  module:
+    - ds
+    - entity_reference_revisions
+    - options
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - links
+        - node_title
+        - field_unidade_tipo
+        - 'dynamic_token_field:node-compartilhar'
+        - field_unidade_paragrafos
+        - field_palavras_chave
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h1
+          class: ''
+          link: false
+      'dynamic_token_field:node-compartilhar':
+        plugin_id: 'dynamic_token_field:node-compartilhar'
+        weight: 3
+        label: hidden
+        formatter: default
+id: node.unidade.default
+targetEntityType: node
+bundle: unidade
+mode: default
+content:
+  field_palavras_chave:
+    weight: 5
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: main
+  field_unidade_paragrafos:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: main
+  field_unidade_tipo:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: main
+  links:
+    weight: 0
+    region: main
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_unidade_ordenacao: true
+  langcode: true

@@ -1,0 +1,2505 @@
+uuid: 3fedefe0-a8ab-497c-93cb-e1a1cb280646
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.unidade
+  module:
+    - node
+    - options
+    - user
+id: unidades
+label: Unidades
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Default
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Pesquisar
+          reset_button: false
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: full
+        options:
+          items_per_page: 20
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: mb-3
+          default_row_class: true
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      fields:
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: view
+          output_url_as_text: true
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<a href="{{ view_node }}">{{ rendered_entity }}</a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: teaser
+          entity_type: node
+          plugin_id: rendered_entity
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome da Unidade'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+      title: Unidades
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<h1>[view:title]</h1>'
+            format: codigo
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      use_ajax: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_cobselhos_superiores:
+    display_plugin: page
+    id: pagina_cobselhos_superiores
+    display_title: 'Página - Conselhos Superiores'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      path: unidades/conselhos-superiores
+      display_description: ''
+      title: 'Conselhos Superiores'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'Conselhos Superiore': 'Conselhos Superiore'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome do Conselho Superior'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_comissoes:
+    display_plugin: page
+    id: pagina_comissoes
+    display_title: 'Página - Comissões'
+    position: 10
+    display_options:
+      display_extenders: {  }
+      path: unidades/comissoes
+      display_description: ''
+      title: Comissões
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            Comissões: Comissões
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome da Comissão'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_comites:
+    display_plugin: page
+    id: pagina_comites
+    display_title: 'Página - Comitês'
+    position: 11
+    display_options:
+      display_extenders: {  }
+      path: unidades/comites
+      display_description: ''
+      title: Comitês
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            Comitês: Comitês
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome do Comitê'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_faculdades:
+    display_plugin: page
+    id: pagina_faculdades
+    display_title: 'Página - Faculdades'
+    position: 8
+    display_options:
+      display_extenders: {  }
+      path: unidades/faculdades
+      display_description: ''
+      title: Faculdades
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            Faculdades: Faculdades
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome da Faculdade'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_institutos:
+    display_plugin: page
+    id: pagina_institutos
+    display_title: 'Página - Institutos'
+    position: 9
+    display_options:
+      display_extenders: {  }
+      path: unidades/institutos
+      display_description: ''
+      title: Institutos
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            Institutos: Institutos
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome do Instituto'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_orgaos_administrativos:
+    display_plugin: page
+    id: pagina_orgaos_administrativos
+    display_title: 'Página - Órgãos Administrativos'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      path: unidades/orgaos-administrativos
+      display_description: ''
+      title: 'Órgãos Administrativos'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'Órgãos Administrativos': 'Órgãos Administrativos'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome do Órgão Administrativo'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_orgaos_diretivos:
+    display_plugin: page
+    id: pagina_orgaos_diretivos
+    display_title: 'Página - Órgãos Diretivos'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: unidades/orgaos-diretivos
+      display_description: ''
+      title: 'Órgãos Diretivos'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'Órgãos Diretivos': 'Órgãos Diretivos'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome do Órgão Diretivo'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_orgaos_suplementares:
+    display_plugin: page
+    id: pagina_orgaos_suplementares
+    display_title: 'Página - Órgãos Suplementares'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      path: unidades/orgaos-suplementares
+      display_description: ''
+      title: 'Órgãos Suplementares'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'Órgãos Suplementares': 'Órgãos Suplementares'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome do Órgão Suplementar'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_pro_reitorias:
+    display_plugin: page
+    id: pagina_pro_reitorias
+    display_title: 'Página - Pró-reitorias'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      path: unidades/pro-reitorias
+      display_description: ''
+      title: Pró-reitorias
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            Pró-reitorias: Pró-reitorias
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome da Pró-reitoria'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_todas_unidades:
+    display_plugin: page
+    id: pagina_todas_unidades
+    display_title: 'Página - Todas as Unidades'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: unidades
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'
+  pagina_unidades_especiais_ensino:
+    display_plugin: page
+    id: pagina_unidades_especiais_ensino
+    display_title: 'Página - Unidades Especiais de Ensino'
+    position: 7
+    display_options:
+      display_extenders: {  }
+      path: unidades/unidades-especiais-de-ensino
+      display_description: ''
+      title: 'Unidades Especiais de Ensino'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        sorts: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            unidade: unidade
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_unidade_tipo_value:
+          id: field_unidade_tipo_value
+          table: node__field_unidade_tipo
+          field: field_unidade_tipo_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            'Unidades Especiais de Ensino': 'Unidades Especiais de Ensino'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Nome da Unidade Especial de Ensino'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_unidade_ordenacao_value:
+          id: field_unidade_ordenacao_value
+          table: node__field_unidade_ordenacao
+          field: field_unidade_ordenacao_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.acesso_rapido.default'
+        - 'config:core.entity_view_display.node.acesso_rapido.teaser'
+        - 'config:core.entity_view_display.node.comunicado.default'
+        - 'config:core.entity_view_display.node.comunicado.teaser'
+        - 'config:core.entity_view_display.node.evento.default'
+        - 'config:core.entity_view_display.node.evento.teaser'
+        - 'config:core.entity_view_display.node.localizacao.default'
+        - 'config:core.entity_view_display.node.localizacao.teaser'
+        - 'config:core.entity_view_display.node.noticia.default'
+        - 'config:core.entity_view_display.node.noticia.lista_com_imagem'
+        - 'config:core.entity_view_display.node.noticia.lista_horizontal'
+        - 'config:core.entity_view_display.node.noticia.lista_sem_imagem'
+        - 'config:core.entity_view_display.node.noticia.teaser'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.default'
+        - 'config:core.entity_view_display.node.ufu_em_numeros.teaser'
+        - 'config:core.entity_view_display.node.unidade.default'
+        - 'config:core.entity_view_display.node.unidade.teaser'

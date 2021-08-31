@@ -1,0 +1,70 @@
+uuid: b02aadbc-326c-48ac-8819-15763cc976b0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.unidade.field_palavras_chave
+    - field.field.node.unidade.field_unidade_ordenacao
+    - field.field.node.unidade.field_unidade_paragrafos
+    - field.field.node.unidade.field_unidade_tipo
+    - node.type.unidade
+  module:
+    - ds
+    - options
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+        - field_unidade_tipo
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h3
+          class: ''
+          link: false
+id: node.unidade.teaser
+targetEntityType: node
+bundle: unidade
+mode: teaser
+content:
+  field_unidade_tipo:
+    type: list_default
+    weight: 1
+    region: main
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_palavras_chave: true
+  field_unidade_ordenacao: true
+  field_unidade_paragrafos: true
+  langcode: true
+  links: true

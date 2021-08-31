@@ -1,0 +1,23 @@
+uuid: bfc158c5-e500-4f1d-9d4c-6ce3ecd8fdc6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.abas.field_abas
+    - paragraphs.paragraphs_type.abas
+  module:
+    - bootstrap_horizontal_tabs
+id: paragraph.abas.default
+targetEntityType: paragraph
+bundle: abas
+mode: default
+content:
+  field_abas:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: bootstrap_horizontal_tabs
+    region: content
+hidden:
+  created: true
+  status: true

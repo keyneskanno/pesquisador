@@ -1,0 +1,33 @@
+uuid: 78ed1635-07ca-4758-a38d-c4a2e86017f2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acordeao.field_acordeao
+    - paragraphs.paragraphs_type.acordeao
+  module:
+    - faqfield
+id: paragraph.acordeao.default
+targetEntityType: paragraph
+bundle: acordeao
+mode: default
+content:
+  field_acordeao:
+    weight: 0
+    settings:
+      answer_widget: text_format
+      question_title: Título
+      answer_title: Conteúdo
+      advanced:
+        question_length: 255
+        question_size: 100
+        question_rows: 0
+        answer_rows: 3
+      question_field_required: false
+      answer_field_required: false
+    third_party_settings: {  }
+    type: faqfield_default
+    region: content
+hidden:
+  created: true
+  status: true

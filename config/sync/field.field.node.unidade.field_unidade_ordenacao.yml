@@ -1,0 +1,21 @@
+uuid: 7dd130b1-10b8-42ba-ae95-ed925a2bc504
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unidade_ordenacao
+    - node.type.unidade
+  module:
+    - options
+id: node.unidade.field_unidade_ordenacao
+field_name: field_unidade_ordenacao
+entity_type: node
+bundle: unidade
+label: Ordenação
+description: 'Selecione a posição que esta Unidade deve ser exibida na listagem.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

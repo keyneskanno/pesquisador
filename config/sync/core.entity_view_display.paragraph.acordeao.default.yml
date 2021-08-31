@@ -1,0 +1,32 @@
+uuid: 6fe94197-f3ac-4afe-b8c8-e8e0a7c57824
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acordeao.field_acordeao
+    - paragraphs.paragraphs_type.acordeao
+  module:
+    - ds
+    - faqfield
+id: paragraph.acordeao.default
+targetEntityType: paragraph
+bundle: acordeao
+mode: default
+content:
+  field_acordeao:
+    weight: 0
+    label: hidden
+    settings:
+      active: 0
+      heightStyle: content
+      event: click
+      animate:
+        duration: 200
+        easing: linear
+      collapsible: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: faqfield_accordion
+    region: content
+hidden: {  }

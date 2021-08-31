@@ -52,7 +52,7 @@ add_structured_data_json_ld: false
 use_site_title: false
 include_invalid_paths: false
 excluded_paths: ''
-replaced_titles: ''
+replaced_titles: 'Pró Reitorias::Pró-reitorias'
 custom_paths: ''
 title_segment_as_link: false
 follow_redirects: true

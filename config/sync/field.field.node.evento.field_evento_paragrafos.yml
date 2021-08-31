@@ -5,12 +5,15 @@ dependencies:
   config:
     - field.storage.node.field_evento_paragrafos
     - node.type.evento
+    - paragraphs.paragraphs_type.abas
+    - paragraphs.paragraphs_type.acordeao
     - paragraphs.paragraphs_type.arquivos
     - paragraphs.paragraphs_type.foto_perfil_texto
     - paragraphs.paragraphs_type.galeria
     - paragraphs.paragraphs_type.imagem
     - paragraphs.paragraphs_type.imagem_e_texto
     - paragraphs.paragraphs_type.incorporar_codigo
+    - paragraphs.paragraphs_type.mapa
     - paragraphs.paragraphs_type.texto
     - paragraphs.paragraphs_type.texto_duas_colunas
     - paragraphs.paragraphs_type.texto_e_imagem
@@ -39,38 +42,50 @@ settings:
       foto_perfil_texto: foto_perfil_texto
       imagem_e_texto: imagem_e_texto
       texto_e_imagem: texto_e_imagem
+      abas: abas
+      acordeao: acordeao
+      mapa: mapa
       video: video
       arquivos: arquivos
       incorporar_codigo: incorporar_codigo
     target_bundles_drag_drop:
-      arquivos:
-        enabled: true
-        weight: -13
-      foto_perfil_texto:
-        enabled: true
-        weight: -17
-      galeria:
-        enabled: true
-        weight: -18
-      imagem:
-        enabled: true
-        weight: -19
-      imagem_e_texto:
-        enabled: true
-        weight: -16
-      incorporar_codigo:
-        enabled: true
-        weight: -12
-      texto:
-        enabled: true
-        weight: -21
-      texto_duas_colunas:
+      abas:
         enabled: true
         weight: -20
-      texto_e_imagem:
+      acordeao:
+        enabled: true
+        weight: -19
+      arquivos:
+        enabled: true
+        weight: -16
+      foto_perfil_texto:
+        enabled: true
+        weight: -23
+      galeria:
+        enabled: true
+        weight: -24
+      imagem:
+        enabled: true
+        weight: -25
+      imagem_e_texto:
+        enabled: true
+        weight: -22
+      incorporar_codigo:
         enabled: true
         weight: -15
+      mapa:
+        enabled: true
+        weight: -18
+      texto:
+        enabled: true
+        weight: -27
+      texto_duas_colunas:
+        enabled: true
+        weight: -26
+      texto_e_imagem:
+        enabled: true
+        weight: -21
       video:
         enabled: true
-        weight: -14
+        weight: -17
 field_type: entity_reference_revisions

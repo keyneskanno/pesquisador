@@ -1,0 +1,51 @@
+uuid: 6d24c0eb-a6f7-42a0-b0e2-26d107422801
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_unidade_tipo
+field_name: field_unidade_tipo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Órgãos Diretivos'
+      label: 'Órgão Diretivo'
+    -
+      value: Pró-reitorias
+      label: Pró-reitoria
+    -
+      value: 'Conselhos Superiore'
+      label: 'Conselho Superior'
+    -
+      value: 'Órgãos Administrativos'
+      label: 'Órgão Administrativo'
+    -
+      value: 'Órgãos Suplementares'
+      label: 'Órgão Suplementar'
+    -
+      value: 'Unidades Especiais de Ensino'
+      label: 'Unidade Especial de Ensino'
+    -
+      value: Faculdades
+      label: Faculdade
+    -
+      value: Institutos
+      label: Instituto
+    -
+      value: Comitês
+      label: Comitê
+    -
+      value: Comissões
+      label: Comissão
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

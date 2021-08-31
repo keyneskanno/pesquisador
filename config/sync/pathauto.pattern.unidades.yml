@@ -1,0 +1,22 @@
+uuid: 2e9d1ad6-85b6-46af-845f-64a6175cf707
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: unidades
+label: Unidades
+type: 'canonical_entities:node'
+pattern: 'unidades/[node:field_unidade_tipo:value]/[node:title]'
+selection_criteria:
+  bb4f27b1-2386-4f9f-b9f9-bd983b58242c:
+    id: node_type
+    bundles:
+      unidade: unidade
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bb4f27b1-2386-4f9f-b9f9-bd983b58242c
+selection_logic: and
+weight: -5
+relationships: {  }

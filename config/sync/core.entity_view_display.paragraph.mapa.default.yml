@@ -1,0 +1,35 @@
+uuid: b47625f5-077e-498c-bcab-b200de77eddf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mapa.field_mapa_coordenadas
+    - paragraphs.paragraphs_type.mapa
+  module:
+    - simple_gmap
+id: paragraph.mapa.default
+targetEntityType: paragraph
+bundle: mapa
+mode: default
+content:
+  field_mapa_coordenadas:
+    weight: 0
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '200'
+      iframe_title: ''
+      static_scale: 1
+      link_text: 'Visualizar o mapa ampliado'
+      zoom_level: 14
+      map_type: m
+      langcode: pt-br
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+hidden: {  }

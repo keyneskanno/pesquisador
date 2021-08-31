@@ -1,0 +1,21 @@
+uuid: f700f66d-cc45-4092-ae74-91f44b7df88d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unidade_tipo
+    - node.type.unidade
+  module:
+    - options
+id: node.unidade.field_unidade_tipo
+field_name: field_unidade_tipo
+entity_type: node
+bundle: unidade
+label: 'Tipo de Unidade'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

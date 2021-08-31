@@ -1,0 +1,22 @@
+uuid: b1f48b6c-a117-4f67-a03a-c282ba2756e8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_acordeao
+    - paragraphs.paragraphs_type.acordeao
+  module:
+    - faqfield
+id: paragraph.acordeao.field_acordeao
+field_name: field_acordeao
+entity_type: paragraph
+bundle: acordeao
+label: Acordeão
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: plain_text
+field_type: faqfield

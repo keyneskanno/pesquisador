@@ -1,0 +1,19 @@
+uuid: 56c78731-6305-4a3a-ad06-363b6b47336d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - bootstrap_horizontal_tabs
+    - paragraphs
+id: paragraph.field_abas
+field_name: field_abas
+entity_type: paragraph
+type: bootstrap_horizontal_tabs
+settings: {  }
+module: bootstrap_horizontal_tabs
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -11,6 +11,12 @@ definitions:
     parent: ''
     expanded: false
     enabled: false
+  paragraphs__type_add:
+    menu_name: admin
+    parent: entity.paragraphs_type.collection
+    weight: -10
+    expanded: false
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 langcode: pt-br

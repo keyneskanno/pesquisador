@@ -44,7 +44,7 @@ display:
         options:
           submit_button: Aplicar
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: Reiniciar
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -123,7 +123,7 @@ display:
           id: name
           table: users_field_data
           field: name
-          label: Author
+          label: Autor
           relationship: uid
           plugin_id: field
           type: user_name

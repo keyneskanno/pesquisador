@@ -1,0 +1,12 @@
+uuid: db7c5c96-a344-4da4-8b5a-c88eaae946cd
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'file:file:e62fc684-5e66-4fbb-a1a4-354ce15a7251'
+id: mapa
+label: Mapa
+icon_uuid: e62fc684-5e66-4fbb-a1a4-354ce15a7251
+icon_default: 'data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJtYXAtbWFya2VyLWFsdCIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLW1hcC1tYXJrZXItYWx0IGZhLXctMTIiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzg0IDUxMiI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTcyLjI2OCA1MDEuNjdDMjYuOTcgMjkxLjAzMSAwIDI2OS40MTMgMCAxOTIgMCA4NS45NjEgODUuOTYxIDAgMTkyIDBzMTkyIDg1Ljk2MSAxOTIgMTkyYzAgNzcuNDEzLTI2Ljk3IDk5LjAzMS0xNzIuMjY4IDMwOS42Ny05LjUzNSAxMy43NzQtMjkuOTMgMTMuNzczLTM5LjQ2NCAwek0xOTIgMjcyYzQ0LjE4MyAwIDgwLTM1LjgxNyA4MC04MHMtMzUuODE3LTgwLTgwLTgwLTgwIDM1LjgxNy04MCA4MCAzNS44MTcgODAgODAgODB6Ij48L3BhdGg+PC9zdmc+'
+description: 'Adiciona um bloco com um mapa'
+behavior_plugins: {  }

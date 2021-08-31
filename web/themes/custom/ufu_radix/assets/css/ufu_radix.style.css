@@ -159,6 +159,9 @@ a:focus {
   margin-bottom: 20px;
 }
 
+.paragraph--type--mapa,
+.paragraph--type--abas,
+.paragraph--type--acordeao,
 .paragraph--type-foto-perfil-texto,
 .paragraph--type-incorporar-codigo,
 .paragraph--type-imagem-e-texto,
@@ -177,6 +180,7 @@ a:focus {
   margin: 30px 0;
 }
 
+.unidade__field-palavras-chave,
 .evento__field-palavras-chave,
 .comunicado__field-palavras-chave,
 .noticia__field-palavras-chave {
@@ -185,6 +189,7 @@ a:focus {
   border-top: 1px solid #e9ecef;
 }
 
+.unidade__field-palavras-chave .field__item,
 .comunicado__field-palavras-chave .field__item,
 .evento__field-palavras-chave .field__item,
 .noticia__field-palavras-chave .field__item {
@@ -192,6 +197,7 @@ a:focus {
   padding-right: 5px;
 }
 
+.unidade__field-palavras-chave .field__item + .field__item::before,
 .evento__field-palavras-chave .field__item + .field__item::before,
 .comunicado__field-palavras-chave .field__item + .field__item::before,
 .noticia__field-palavras-chave .field__item + .field__item::before {
@@ -244,6 +250,7 @@ li.compartilhar a:hover {
   color: #fff;
 }
 
+svg.mailto,
 svg.ext {
   width: 25px !important;
   height: 25px !important;
@@ -285,6 +292,45 @@ svg.mailto path {
 .featured__mobile a:hover,
 .featured__mobile a:focus {
   color: #e9ecef;
+}
+
+.paragraph--type--acordeao .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #e9ecef;
+  background: #e9ecef;
+}
+
+.paragraph--type--acordeao .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 1px solid #3B3174;
+  background: #3B3174;
+}
+
+.paragraph--type--acordeao .ui-widget {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.paragraph--type--abas .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background: #3B3174;
+  color: #fff;
+  border: 1px solid #3B3174;
+}
+
+.paragraph--type--abas .nav-tabs .nav-link:hover {
+  border: 1px solid #e9ecef;
+  border-bottom: 1px solid #3B3174;
+  background: #e9ecef;
+  color: #212529;
+}
+
+.paragraph--type--abas .nav-tabs {
+  border-bottom: 1px solid #3B3174;
+}
+
+.paragraph--type--acordeao .ui-widget-content,
+.paragraph--type--abas .tab-pane {
+  border: 1px solid #e9ecef;
+  padding: 15px 30px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 @media (min-width: 1367px) and (max-width: 2560px) {
