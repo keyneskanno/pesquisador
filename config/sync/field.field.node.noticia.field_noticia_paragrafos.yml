@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.abas
     - paragraphs.paragraphs_type.acordeao
     - paragraphs.paragraphs_type.arquivos
+    - paragraphs.paragraphs_type.destaque
     - paragraphs.paragraphs_type.foto_perfil_texto
     - paragraphs.paragraphs_type.galeria
     - paragraphs.paragraphs_type.imagem
@@ -37,6 +38,7 @@ settings:
     target_bundles:
       texto: texto
       texto_duas_colunas: texto_duas_colunas
+      destaque: destaque
       imagem: imagem
       galeria: galeria
       foto_perfil_texto: foto_perfil_texto
@@ -51,41 +53,44 @@ settings:
     target_bundles_drag_drop:
       abas:
         enabled: true
-        weight: -20
+        weight: -21
       acordeao:
         enabled: true
-        weight: -19
+        weight: -20
       arquivos:
         enabled: true
-        weight: -16
-      foto_perfil_texto:
-        enabled: true
-        weight: -23
-      galeria:
-        enabled: true
-        weight: -24
-      imagem:
-        enabled: true
-        weight: -25
-      imagem_e_texto:
-        enabled: true
-        weight: -22
-      incorporar_codigo:
-        enabled: true
-        weight: -15
-      mapa:
-        enabled: true
         weight: -17
-      texto:
+      destaque:
         enabled: true
         weight: -27
-      texto_duas_colunas:
+      foto_perfil_texto:
+        enabled: true
+        weight: -24
+      galeria:
+        enabled: true
+        weight: -25
+      imagem:
         enabled: true
         weight: -26
-      texto_e_imagem:
+      imagem_e_texto:
         enabled: true
-        weight: -21
-      video:
+        weight: -23
+      incorporar_codigo:
+        enabled: true
+        weight: -16
+      mapa:
         enabled: true
         weight: -18
+      texto:
+        enabled: true
+        weight: -29
+      texto_duas_colunas:
+        enabled: true
+        weight: -28
+      texto_e_imagem:
+        enabled: true
+        weight: -22
+      video:
+        enabled: true
+        weight: -19
 field_type: entity_reference_revisions

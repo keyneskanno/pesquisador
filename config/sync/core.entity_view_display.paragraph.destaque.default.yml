@@ -1,0 +1,49 @@
+uuid: 46a04237-029b-4119-a741-655d2fc948ca
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.destaque.field_destaque_imagem
+    - field.field.paragraph.destaque.field_destaque_link
+    - paragraphs.paragraphs_type.destaque
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - 'dynamic_token_field:paragraph-destaque'
+    fields:
+      'dynamic_token_field:paragraph-destaque':
+        plugin_id: 'dynamic_token_field:paragraph-destaque'
+        weight: 0
+        label: hidden
+        formatter: default
+id: paragraph.destaque.default
+targetEntityType: paragraph
+bundle: destaque
+mode: default
+content: {  }
+hidden:
+  field_destaque_imagem: true
+  field_destaque_link: true

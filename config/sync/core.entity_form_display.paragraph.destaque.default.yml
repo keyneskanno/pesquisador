@@ -1,0 +1,36 @@
+uuid: b1e62a60-ed03-43a4-a0d4-bf686fb023a6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.destaque.field_destaque_imagem
+    - field.field.paragraph.destaque.field_destaque_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.destaque
+  module:
+    - image
+    - link
+id: paragraph.destaque.default
+targetEntityType: paragraph
+bundle: destaque
+mode: default
+content:
+  field_destaque_imagem:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_destaque_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

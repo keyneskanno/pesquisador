@@ -1,0 +1,19 @@
+uuid: 40e1db2c-df90-4e31-8aed-56aedecff9a5
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_destaque_link
+field_name: field_destaque_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

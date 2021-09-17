@@ -1,0 +1,23 @@
+uuid: 9d37265d-011f-4fd9-b50b-be9c0d1dba15
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_destaque_link
+    - paragraphs.paragraphs_type.destaque
+  module:
+    - link
+id: paragraph.destaque.field_destaque_link
+field_name: field_destaque_link
+entity_type: paragraph
+bundle: destaque
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

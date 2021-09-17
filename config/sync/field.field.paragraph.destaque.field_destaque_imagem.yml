@@ -1,0 +1,38 @@
+uuid: 31262f31-c5aa-4d2c-a56d-447d84afb075
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_destaque_imagem
+    - paragraphs.paragraphs_type.destaque
+  module:
+    - image
+id: paragraph.destaque.field_destaque_imagem
+field_name: field_destaque_imagem
+entity_type: paragraph
+bundle: destaque
+label: Imagem
+description: 'Insira uma mensagem na proporção de 1920px de largura por 360px de altura.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'destaque/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,11 @@
+id: destaque
+label: Destaque
+ui_limit: ''
+properties:
+  content:
+    value: '<a href="[paragraph:field_destaque_link:uri]"><img src="[paragraph:field_destaque_imagem:destaque:url]" alt="[paragraph:field_destaque_imagem:alt]" class="img-fluid"></a>'
+    format: codigo
+type: token
+type_label: 'Token field'
+entities:
+  paragraph: paragraph
