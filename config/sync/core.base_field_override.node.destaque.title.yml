@@ -1,0 +1,18 @@
+uuid: 124c7ad5-8aa4-44ac-8b45-021c95e1e48a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.destaque
+id: node.destaque.title
+field_name: title
+entity_type: node
+bundle: destaque
+label: 'Nome do destaque'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,94 @@
+uuid: 1f04658c-5ea9-4acb-ac85-665f88a764ae
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.destaque.field_destaque_imagem
+    - field.field.node.destaque.field_destaque_link
+    - field.field.node.destaque.field_destaque_periodo
+    - image.style.destaque
+    - node.type.destaque
+  module:
+    - datetime_range
+    - ds
+    - image
+    - link
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - links
+        - node_title
+        - field_destaque_imagem
+        - field_destaque_periodo
+        - field_destaque_link
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.destaque.default
+targetEntityType: node
+bundle: destaque
+mode: default
+content:
+  field_destaque_imagem:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: destaque
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: main
+  field_destaque_link:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      rel: nofollow
+      target: _blank
+      url_plain: false
+    third_party_settings: {  }
+    type: link
+    region: main
+  field_destaque_periodo:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: somente_data
+      separator: à
+    third_party_settings: {  }
+    type: daterange_default
+    region: main
+  links:
+    weight: 0
+    region: main
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

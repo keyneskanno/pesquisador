@@ -1,0 +1,22 @@
+uuid: a71b3f94-3756-4875-b85f-789e67a039c4
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: destaques
+label: Destaques
+type: 'canonical_entities:node'
+pattern: 'destaques/[node:title]'
+selection_criteria:
+  cd1dd8bc-b5bc-4b66-b67f-02c2bf063f20:
+    id: node_type
+    bundles:
+      destaque: destaque
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cd1dd8bc-b5bc-4b66-b67f-02c2bf063f20
+selection_logic: and
+weight: -5
+relationships: {  }

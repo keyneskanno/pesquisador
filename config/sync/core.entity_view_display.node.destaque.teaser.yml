@@ -1,0 +1,27 @@
+uuid: a068f2ff-d07b-4e3e-860c-313d681ad1df
+langcode: pt-br
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.destaque.field_destaque_imagem
+    - field.field.node.destaque.field_destaque_link
+    - field.field.node.destaque.field_destaque_periodo
+    - node.type.destaque
+  module:
+    - user
+id: node.destaque.teaser
+targetEntityType: node
+bundle: destaque
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_destaque_imagem: true
+  field_destaque_link: true
+  field_destaque_periodo: true
+  langcode: true

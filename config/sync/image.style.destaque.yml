@@ -1,0 +1,15 @@
+uuid: ddfcdfa0-2e33-4727-ab36-eb1136fb3bf2
+langcode: pt-br
+status: true
+dependencies: {  }
+name: destaque
+label: 'Destaque (1920 x 360)'
+effects:
+  736aba5e-342d-4297-8110-9824c0aa0f12:
+    uuid: 736aba5e-342d-4297-8110-9824c0aa0f12
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 360
+      anchor: center-center

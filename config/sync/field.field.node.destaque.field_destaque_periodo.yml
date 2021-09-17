@@ -1,0 +1,21 @@
+uuid: c73af362-8e85-4b58-adcb-b985b959a32a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destaque_periodo
+    - node.type.destaque
+  module:
+    - datetime_range
+id: node.destaque.field_destaque_periodo
+field_name: field_destaque_periodo
+entity_type: node
+bundle: destaque
+label: 'Período de destaque'
+description: 'Informe o período que esse conteúdo deve permanecer em Destaque.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

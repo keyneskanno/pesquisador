@@ -1,0 +1,8 @@
+uuid: 7e389f8f-1a72-424a-95e8-31be2e91145a
+langcode: pt-br
+status: true
+dependencies: {  }
+id: somente_data
+label: 'Somente data'
+locked: false
+pattern: d/m/Y

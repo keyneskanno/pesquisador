@@ -1,0 +1,11 @@
+uuid: fabe542c-7339-4e27-8d2c-661324b2a905
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.destaque
+id: node.destaque
+target_entity_type_id: node
+target_bundle: destaque
+default_langcode: site_default
+language_alterable: false

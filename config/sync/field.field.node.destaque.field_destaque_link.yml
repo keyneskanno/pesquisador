@@ -1,0 +1,23 @@
+uuid: bb178243-8cba-415e-9225-d4811d928c44
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destaque_link
+    - node.type.destaque
+  module:
+    - link
+id: node.destaque.field_destaque_link
+field_name: field_destaque_link
+entity_type: node
+bundle: destaque
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

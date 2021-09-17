@@ -1,0 +1,17 @@
+uuid: d823883e-7336-4001-b544-8bc9a94e37d9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Destaque
+type: destaque
+description: 'Crie um novo <em>Destaque</em>.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false
