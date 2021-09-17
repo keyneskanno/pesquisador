@@ -3,7 +3,7 @@ label: 'Acesso rápido'
 ui_limit: ''
 properties:
   content:
-    value: '<p class=''text-center''><a class=''btn btn-primary'' href=''[node:field_acesso_rapido_link:uri]'' target=''_blank'' alt=''[node:title]''><img src=''[node:field_acesso_rapido_icone:entity:url]'' style=''width: 120px;''/></a><br/><strong>[node:title]</strong></p>'
+    value: '<p class=''text-center''><a class=''btn btn-primary'' href=''[node:field_acesso_rapido_link:uri]'' target=''_blank'' alt=''[node:title]''><img src=''[node:field_acesso_rapido_icone:entity:url]'' class=''w-100''/></a><br/><strong>[node:title]</strong></p>'
     format: codigo
 type: token
 type_label: 'Token field'
